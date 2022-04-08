@@ -80,7 +80,7 @@ module.exports = function setupRESTapi(app, databaseConnection) {
 
     app.post('/api/' + name, (req, res) => {
       delete req.body.id;
-
+      //user role will be automatically 'user'
       if (name === userTable) {
         req.body[userRoleField] = 'user';
         req.body[passwordField] =

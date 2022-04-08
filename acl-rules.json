@@ -1,28 +1,24 @@
 {
   "visitor": {
-    "authors": {
-      "get": true
-    },
-    "books": {
-      "get": true
-    },
-    "booksWithAuthors": {
+    "products": {
       "get": true
     },
     "login": {
-      "post": true,
-      "get": true
+      "get": true,
+      "post":true
     },
     "customers": {
       "post": true
     }
-  },
+  },    
+  
   "user": {
-    "authors": {
+    "products": {
       "get": true
     },
-    "books": {
-      "get": true
+    "login": {
+      "get": true,
+      "delete": true
     },
     "booksWithAuthors": {
       "get": true
@@ -38,62 +34,7 @@
       "put": true
     }
   },
-  "superadmin": {
-    "authors": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "authorsXbooks": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "books": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "customers": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "orders": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "ordersXbooks": {
-      "get": true,
-      "post": true,
-      "put": true,
-      "delete": true
-    },
-    "booksWithAuthors": {
-      "get": true
-    },
-    "orderDetails": {
-      "get": true
-    },
-    "ordersByCustomers": {
-      "get": true
-    },
-    "login": {
-      "get": true,
-      "delete": true
-    },
-    "my-orders": {
-      "get": true
-    },
-    "edit-my-user-info": {
-      "put": true
-    },
+  "admin": {
     "tablesAndViews": {
       "get": true
     }
