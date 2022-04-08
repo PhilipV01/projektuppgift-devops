@@ -1,6 +1,6 @@
 const passwordEncryptor = require('./passwordEncryptor');
 const acl = require('./acl');
-const specialRestRoutes = require('./special-rest-routes.js');
+const specialRestRoutes = require('../special-rest-routes.js');
 const userTable = 'customers';
 const passwordField = 'password';
 const userRoleField = 'userRole';// REST ROUTE: db-info
