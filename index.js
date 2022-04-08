@@ -1,7 +1,7 @@
 const path = require('path');
 const betterSqlite3 = require('better-sqlite3');
-const db = betterSqlite3('./database/bookshop.db');
-const port = process.env.PORT || 3000;
+const db = betterSqlite3('./database/groceryshop.db');
+const port = process.env.PORT || 5500;
 const express = require('express');
 
 const app = express();
