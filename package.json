@@ -12,5 +12,8 @@
   "devDependencies": {
     "jest": "^27.5.1",
     "jsdom": "^19.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
   }
 }
