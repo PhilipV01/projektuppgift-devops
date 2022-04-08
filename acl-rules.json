@@ -7,7 +7,7 @@
       "get": true,
       "post":true
     },
-    "customers": {
+    "user": {
       "post": true
     }
   },    
@@ -19,24 +19,22 @@
     "login": {
       "get": true,
       "delete": true
-    },
-    "booksWithAuthors": {
-      "get": true
-    },
-    "login": {
-      "get": true,
-      "delete": true
-    },
-    "my-orders": {
-      "get": true
-    },
-    "edit-my-user-info": {
-      "put": true
-    }
+    }   
   },
+
   "admin": {
     "tablesAndViews": {
       "get": true
+    },
+    "products":{
+      "get": true,
+      "post": true,
+      "put": true,
+      "delete": true
+    },
+    "login"{
+      "get":true,
+      "delete":true
     }
-  }
+  } 
 }
