@@ -1,7 +1,7 @@
 {
   "name": "grocery-shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Betygsgrundande uppgift för DevOps1 kursen.",
   "main": "main.js",
   "scripts": {
     "test": "jest"
@@ -18,5 +18,16 @@
     "better-sqlite3": "^7.5.1",
     "express": "^4.17.3",
     "session": "^0.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipV01/projektuppgift-devops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhilipV01/projektuppgift-devops/issues"
+  },
+  "homepage": "https://github.com/PhilipV01/projektuppgift-devops#readme"
 }
