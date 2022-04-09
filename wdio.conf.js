@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 exports.config = {
     //
     // ====================
@@ -21,7 +22,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './cucumner-wdio/features/**/*.feature'
+        './cucumber-wdio/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -57,6 +58,21 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
+
+        'goog:chromeOptions': {
+            args: [
+                '--disable-infobars',
+                '--window-size=1280,800',
+            ].concat((() => process.env.HEADLESS_CHROME !== 'yes' ? [] : [
+                '--headless',
+                '--no-sandbox',
+                '--disable-gpu',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage'
+            ]
+            )())
+        },
+
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
@@ -70,7 +86,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: process.env.WDIO_LOG_LEVEL || 'info',
     //
     // Set specific log levels per logger
     // loggers:
