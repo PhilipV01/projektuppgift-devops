@@ -11,7 +11,7 @@ module.exports = function (app, db) {
     saveUninitialized: true,
     cookie: { secure: 'auto' },
     store: store({ dbPath: './database/groceryshop.db' })
-  }));
+  })); //database name should be 'groceryshop.db' instead of products
 
   app.post('/api/login', (req, res) => {
     if (!acl('login', req)) {
