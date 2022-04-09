@@ -6,14 +6,17 @@ class ProductList {
 
     // When we create a new ProductList
     // call the methodreadDataFromFIle
-    this.readDataFromFile();
+    this.readDataFromDb();
+
+    // Create a new shopping cart
+    this.shoppingCart = new ShoppingCart();
   }
 
   // async methods/functions can use the keyword
   // await to wait for things like loading data etc.
-  async readDataFromFile() {
+  async readDataFromDb() {
     // read the json data
-    let rawData = await fetch('/product-data.json');
+    let rawData = await fetch('/api/products');
     // convert from json to a JavaScript data structure
     // data will be an array of generic objects
     let data = await rawData.json();
@@ -28,8 +31,9 @@ class ProductList {
     for (let element of data) {
       // create an instance of Products based on a generic object
       // from the son data
+      // (note: this = this Productlist)
       let aProduct = new Product(element.id, element.name,
-        element.price, element.description);
+        element.price, element.description, this);
       // add the product to the products array
       this.products.push(aProduct);
     }
@@ -42,7 +46,7 @@ class ProductList {
   // Render a list of products
   render() {
     // Create the variable html - an empty string
-    let html = '';
+    let html = '<p>Click on a product name to see product details.</p>';
     // Loop through all products and add the html
     // for each product to the html variable
     for (let product of this.products) {
@@ -55,7 +59,7 @@ class ProductList {
   addEventListeners() {
 
     // Add a click event handler for a product in a list
-    listen('click', '.productInList', event => {
+    listen('click', '.productInList h3', event => {
       // which product did the user click on?
       let productElement = event.target.closest('.productInList');
 
@@ -91,3 +95,4 @@ class ProductList {
 if (typeof module === 'object' && module.exports) {
   module.exports = ProductList;
 }
+
