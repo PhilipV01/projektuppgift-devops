@@ -1,3 +1,4 @@
+// using the built in crypto module of Node.js
 const crypto = require('crypto');
 
 // salt for encryption
