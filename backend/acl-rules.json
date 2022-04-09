@@ -32,7 +32,7 @@
       "put": true,
       "delete": true
     },
-    "login"{
+    "login":{
       "get":true,
       "delete":true
     }
