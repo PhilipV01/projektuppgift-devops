@@ -29,12 +29,12 @@ module.exports = function (app, runQuery, db) {
     delete req.body.userRole;
 
     runQuery('edit-my-user-info', req, res, queryParameters, `
-        UPDATE customers
+        UPDATE users
         SET ${Object.keys(req.body).map(x => x + ' = :' + x)}
         WHERE id = :id
     `);
 
-    let stmt = db.prepare('SELECT * FROM customers WHERE id = :id');
+    let stmt = db.prepare('SELECT * FROM users WHERE id = :id');
     let updatedUserInfo = stmt.all({ id: queryParameters.id })[0];
     delete updatedUserInfo.password;
     req.session.user = updatedUserInfo;
