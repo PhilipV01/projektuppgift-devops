@@ -10,7 +10,7 @@ module.exports = function (app, db) {
     resave: false,
     saveUninitialized: true,
     cookie: { secure: 'auto' },
-    store: store({ dbPath: './database/groceryshop.db' })
+    store: store({ dbPath: './database/products.db' })
   })); //database name should be 'groceryshop.db' instead of products
 
   app.post('/api/login', (req, res) => {
