@@ -40,6 +40,16 @@ class App {
       listen('click', '.closeCart', () => {
         grabEl('.shoppingCart').style.display = 'none';
       });
+
+      listen('click', '.emptyCart', () => {
+        // reloads the page to empty cart--need method to actually remove
+        location.reload();
+        alert('You have removed your selected items');
+      });
+
+      listen('click', '.checkoutOrder', () => {
+        // need to add method for checkout button found in ShoppingCart.js
+      });
   
       listen('click', '.register', () => {
         grabEl('.overlay').style.display = 'block';
