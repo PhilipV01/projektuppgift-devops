@@ -78,6 +78,10 @@ class App {
         grabEl('.overlay').style.display = 'none';
         grabEl('.loginModal').style.display = 'none';
       });
+      //Empty the cart
+      listen('click', '.emptyCart',()=>{
+        this.productList=[]
+      })
   
       LoginAndRegister.addEvents();
   
