@@ -11,40 +11,61 @@ When ('I click on the log in button', async () => {
         // click the buyButton
         await logInButton.click();
       });
-And ('I see log in modal', async() =>{
-     await $('.loginModal modal');
 
+And ('I see log in modal', async() =>{
+    //grab loginModal 
+    let loginModal= await $('.loginModal modal');
+    
+    let closeLoginModal =await $('.closeLoginModal');
+    await expect(loginModal).toHaveAttr(closeLoginModal);
+
+    let input = await $('.modal input');
+    await expect(loginModal).toHaveAttr(input);
+    await expect (input).toHaveAttr('type="email"');
+    await expect (input).toHaveAttr('type="password"');
+    /*let emailField= await $('Email');
+    await expect(loginModal).toHaveAttr(emailField);
+
+    let passwordField= await $('Password');
+    await expect(loginModal).toHaveAttr(passwordField);*/
     });
 
-And(/^I enter my email "(.*)" in "(.*)"$/, async(email, field)=> {
-    let email = "anna.larsson@gmail.com";
-    let field = await $('.email');
-
+And(/^I enter my email "(.*)" in "(.*)"$/, async(email,field)=> {
+    
+    let email = "anna.larsson@gmail.com"
+     //grab the email field 
+    let field = await $('type="email"');
+    //enter the email 
+    await field.setValue(email);
+    
+       
 });
 
 
-And (/^I enter my password "*" in ".*"$/, async()=>{
+And (/^I enter my password "*" in ".*"$/, async(password, field)=>{
     let password = "12345678";
-    let field = await $('.password');
+    //grab the password field
+    let field = await $('type="password"');
+    //enter the password 
+    await field.setValue(password);
+    
+  
     
 });
 
-And('I click on the login button ')
+And('I click on the login button ', async()=>{
+    // grab the buyButton
+    let logInButton = await $('.login');
+    // click the buyButton
+    await logInButton.click();
+});
 
       
-Then(/^(\d*) item of "(.*)" should be added to the cart$/, async (quantity, productName) => {
-        // get all the table cells in the first row of the table
-        // that is the shoppingList/cart
-        let tds = await $$('.shoppingCart tr:first-child td');
-        // check that we have the expected content in the cart
-        await expect(tds[0]).toHaveText(quantity);
-        await expect(tds[1]).toHaveText(productName);
-        // mostly for humans - scroll to the shopping cart
-        await tds[0].scrollIntoView();
+Then ('I logged in and see log out button now', async (email, productName) => {
+        //grab the logout button 
+        let button = await $('.logout');
+        await expect(button).toHaveText('Logout '+email);
         // pause before ending the step
         await browser.pause(pauseTime);
       });    
 
-
-
-Then I logged in and see log out button now
