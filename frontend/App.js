@@ -6,7 +6,7 @@ class App {
   
     async start() {
   
-      // check if the user is logged in
+      // check if the user is  in
       let rawResult = await fetch('/api/login');
       let result = await rawResult.json();
   
@@ -40,16 +40,6 @@ class App {
       listen('click', '.closeCart', () => {
         grabEl('.shoppingCart').style.display = 'none';
       });
-
-      listen('click', '.emptyCart', () => {
-        // reloads the page to empty cart--need method to actually remove
-        location.reload();
-        alert('You have removed your selected items');
-      });
-
-      listen('click', '.checkoutOrder', () => {
-        // need to add method for checkout button found in ShoppingCart.js
-      });
   
       listen('click', '.register', () => {
         grabEl('.overlay').style.display = 'block';
@@ -78,12 +68,20 @@ class App {
         grabEl('.overlay').style.display = 'none';
         grabEl('.loginModal').style.display = 'none';
       });
-      //Empty the cart
-      listen('click', '.emptyCart',()=>{
-        this.productList=[]
-      })
-      //Send the order 
-      //listen ('click','.checkoutOrder', ()=>{});
+
+      listen('click', '.emptyCart', () => {
+        // reloads the page to empty cart--need method to actually remove
+        alert('You have removed your selected items');
+        this.productList.shoppingCart.empty();
+        //attempt to empty the cart by creating a new list & thus disregarding the old
+        //did NOT work
+        //this.productList=[];        
+      });
+
+      listen('click', '.checkoutOrder', () => {
+        // need to add method for checkout button found in ShoppingCart.js
+      });
+      
   
       LoginAndRegister.addEvents();
   
