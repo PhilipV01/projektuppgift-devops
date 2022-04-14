@@ -23,8 +23,8 @@ And ('I see the login modal and email and password on it', async(email,password)
 
     let input = await $('.modal input');
     await expect(loginModal).toHaveAttr(input);
-    await expect (input).toHaveAttr('type="email"');
-    await expect (input).toHaveAttr('type="password"');
+    await expect (input).toHaveAttr('input[name="email"]');
+    await expect (input).toHaveAttr('input[name="password"]');
     /*let emailField= await $('Email');
     await expect(loginModal).toHaveAttr(emailField);
 
@@ -32,11 +32,9 @@ And ('I see the login modal and email and password on it', async(email,password)
     await expect(loginModal).toHaveAttr(passwordField);*/
     });
 
-And(/^I enter my email "(.*)" in "(.*)"$/, async()=> {
-    
-    let email = "anna.larsson@gmail.com"
+And(/^I enter my email "(.*)" in Email$/, async(email)=> {
      //grab the email field 
-    let field = await $('type="email"');
+    let field = await $('input[name="email"]');
     //enter the email 
     await field.setValue(email);
     
@@ -44,10 +42,9 @@ And(/^I enter my email "(.*)" in "(.*)"$/, async()=> {
 });
 
 
-And (/^I enter my password "*" in ".*"$/, async()=>{
-    let password = "12345678";
+And (/^I enter my password "*" in Password$/, async(password)=>{
     //grab the password field
-    let field = await $('type="password"');
+    let field = await $('input[name="password"]');
     //enter the password 
     await field.setValue(password);
     
