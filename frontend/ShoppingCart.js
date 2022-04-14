@@ -27,6 +27,14 @@ class ShoppingCart {
       document.querySelector('footer').innerHTML =
         this.render();
     }
+
+    empty(){
+      // empty cart
+      this.orderRows.length = 0;
+      // rerender
+      document.querySelector('footer').innerHTML =
+        this.render();
+    }
   
     formatSEK(number) {
       return new Intl.NumberFormat(

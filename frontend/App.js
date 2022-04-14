@@ -72,7 +72,7 @@ class App {
       listen('click', '.emptyCart', () => {
         // reloads the page to empty cart--need method to actually remove
         alert('You have removed your selected items');
-        location.reload();
+        this.productList.shoppingCart.empty();
         //attempt to empty the cart by creating a new list & thus disregarding the old
         //did NOT work
         //this.productList=[];        
