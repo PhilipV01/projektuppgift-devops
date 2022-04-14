@@ -3,6 +3,7 @@ const pauseTime = 0;
 
 Given('that I see log in button', async()=>{
     await browser.url('/');
+    console.log();
 });
 //log in button "login "
 When ('I click on the log in button', async () => {
@@ -12,9 +13,9 @@ When ('I click on the log in button', async () => {
         await logInButton.click();
       });
 
-And ('I see log in modal', async() =>{
+And (/^I see "(.*)"$/, async() =>{
     //grab loginModal 
-    let loginModal= await $('.loginModal modal');
+    let loginModal= await $('.loginModal');
     
     let closeLoginModal =await $('.closeLoginModal');
     await expect(loginModal).toHaveAttr(closeLoginModal);
@@ -30,7 +31,7 @@ And ('I see log in modal', async() =>{
     await expect(loginModal).toHaveAttr(passwordField);*/
     });
 
-And(/^I enter my email "(.*)" in "(.*)"$/, async(email,field)=> {
+And(/^I enter my email "(.*)" in "(.*)"$/, async()=> {
     
     let email = "anna.larsson@gmail.com"
      //grab the email field 
@@ -42,7 +43,7 @@ And(/^I enter my email "(.*)" in "(.*)"$/, async(email,field)=> {
 });
 
 
-And (/^I enter my password "*" in ".*"$/, async(password, field)=>{
+And (/^I enter my password "*" in ".*"$/, async()=>{
     let password = "12345678";
     //grab the password field
     let field = await $('type="password"');
@@ -61,7 +62,7 @@ And('I click on the login button ', async()=>{
 });
 
       
-Then ('I logged in and see log out button now', async (email, productName) => {
+Then ('I logged in and see log out button now', async () => {
         //grab the logout button 
         let button = await $('.logout');
         await expect(button).toHaveText('Logout '+email);

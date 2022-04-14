@@ -5,7 +5,7 @@ Feature: Log in as a registered user
     Scenario: Clicking a log in button 
         Given that I see log in button 
         When I click on "Login" button
-        And I see log in modal
+        And I see "loginModal" and "Email" and "Password" on the modal 
         And I enter my email "anna.larsson@gmail.com" in "Email"
         And I enter my password "12345678" in "Password"
         And I click on the log in button 
