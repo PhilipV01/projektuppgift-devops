@@ -1,19 +1,20 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
 const pauseTime = 0;
 
-Given('that I see log in button', async()=>{
+Given('that I see the Login button', async()=>{
     await browser.url('/');
-    console.log();
+    
 });
-//log in button "login "
-When ('I click on the log in button', async () => {
+
+When (/^I click on "(.*)" button$/, async(login) => {
         // grab the buyButton
         let logInButton = await $('.login');
+        await button.toHaveText(login) 
         // click the buyButton
         await logInButton.click();
       });
 
-And (/^I see "(.*)"$/, async() =>{
+And ('I see the login modal and email and password on it', async(email,password) =>{
     //grab loginModal 
     let loginModal= await $('.loginModal');
     
