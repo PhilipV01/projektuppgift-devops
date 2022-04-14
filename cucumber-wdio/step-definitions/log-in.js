@@ -29,6 +29,8 @@ And (/^I enter my password "*" in ".*"$/, async()=>{
     
 });
 
+And('I click on the login button ')
+
       
 Then(/^(\d*) item of "(.*)" should be added to the cart$/, async (quantity, productName) => {
         // get all the table cells in the first row of the table
@@ -44,6 +46,5 @@ Then(/^(\d*) item of "(.*)" should be added to the cart$/, async (quantity, prod
       });    
 
 
-And I enter my password "12345678" in "Password"
-And I click on the log in button 
+
 Then I logged in and see log out button now
