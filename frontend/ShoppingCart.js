@@ -27,6 +27,14 @@ class ShoppingCart {
       document.querySelector('footer').innerHTML =
         this.render();
     }
+
+    empty(){
+      // empty cart
+      this.orderRows.length = 0;
+      // rerender
+      document.querySelector('footer').innerHTML =
+        this.render();
+    }
   
     formatSEK(number) {
       return new Intl.NumberFormat(
@@ -58,7 +66,13 @@ class ShoppingCart {
         <td colspan="3">Total:</td>
         <td>${this.formatSEK(totalSum)}</td>
       </tr>`;
-      html += '</table><button class="closeCart">X</button></div>';
+      html += `
+        </table>
+          <button class="closeCart">X</button>
+          <button class="emptyCart">EmptyCart</button>
+          <button class="checkoutOrder">CheckOut</button>
+        </div>
+      `;
       return html;
     }
   
