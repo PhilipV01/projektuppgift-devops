@@ -7,7 +7,7 @@
       "get": true,
       "post":true
     },
-    "user": {
+    "users": {
       "post": true
     }
   },    
