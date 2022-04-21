@@ -6,65 +6,59 @@ Given('that I see the Login button', async()=>{
     
 });
 
-When (/^I click on "(.*)" button$/, async(login) => {
-        // grab the buyButton
-        let logInButton = await $('.login');
-        await button.toHaveText(login) 
-        // click the buyButton
-        await logInButton.click();
-      });
-
-And ('I see the login modal and email and password on it', async(email,password) =>{
-    //grab loginModal 
-    let loginModal= await $('.loginModal');
-    
-    let closeLoginModal =await $('.closeLoginModal');
-    await expect(loginModal).toHaveAttr(closeLoginModal);
-
-    let input = await $('.modal input');
-    await expect(loginModal).toHaveAttr(input);
-    await expect (input).toHaveAttr('input[name="email"]');
-    await expect (input).toHaveAttr('input[name="password"]');
-    /*let emailField= await $('Email');
-    await expect(loginModal).toHaveAttr(emailField);
-
-    let passwordField= await $('Password');
-    await expect(loginModal).toHaveAttr(passwordField);*/
-    });
-
-And(/^I enter my email "(.*)" in Email$/, async(email)=> {
-     //grab the email field 
-    let field = await $('input[name="email"]');
-    //enter the email 
-    await field.setValue(email);
-    
-       
-});
-
-
-And (/^I enter my password "*" in Password$/, async(password)=>{
-    //grab the password field
-    let field = await $('input[name="password"]');
-    //enter the password 
-    await field.setValue(password);
-    
-  
-    
-});
-
-And('I click on the login button ', async()=>{
+When('I click on log in buttuon',async()=>{  
     // grab the buyButton
     let logInButton = await $('.login');
     // click the buyButton
     await logInButton.click();
+    
 });
 
-      
-Then ('I logged in and see log out button now', async () => {
-        //grab the logout button 
-        let button = await $('.logout');
-        await expect(button).toHaveText('Logout '+email);
-        // pause before ending the step
-        await browser.pause(pauseTime);
-      });    
+When('I see the login modal appeared and there are email and password fields to fill in',async()=>{
+     //grab loginModal 
+     let loginModal= await $('.loginModal');
+     //check ig we have a proper format for log-in modal
+     // x button 
+     //let closeLoginModal =await $('.closeLoginModal'); 
+     //expect(loginModal.toHaveAttr(closeLoginModal));
+     //input fields
+     let input = await $('.modal input');
+     //expect(loginModal.toHaveAttr(input));
+     //email 
+     //expect (input.toHaveAttr('input[name="email"]'));
+     //password 
+     //expect(input.toHaveAttr('input[name="password"]')); 
+});
+
+When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
+    let inputFiled = await $$('form [name="login"]');
+    await browser.pause(2000);
+    //grab the email field 
+    let emailField = await $('input[name="email"]'); 
+    //enter the email 
+    await emailField.click();
+    await emailField.addValue(email);
+    await browser.pause(2000);
+    //grab the password field
+    let passField = await $('input[name="password"]');
+    //enter the password 
+    await passField.click();
+    await passField.addValue(password);
+    await browser.pause(2000); 
+
+  
+    
+});
+
+Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(status)=>{
+    // grab the buyButton
+    let logInButton = await $('button[name="submitLogInInfo"]');
+    // click the buyButton
+    await logInButton.click();
+    //grab the logout button 
+    let logOutButton = await $('.logout');
+    await expect(button).toHaveText(status);
+    // pause before ending the step
+    await browser.pause(pauseTime);
+});
 

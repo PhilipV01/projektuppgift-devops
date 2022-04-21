@@ -28,7 +28,7 @@ class LoginAndRegister {
             <input name="email" type="email" required  placeholder="Email">
             <input name="password" type="password" required 
             min-length="8" max-length="100" placeholder="Password">
-            <button type="submit">Login</button>
+            <button name="submitLoginInfo" type="submit">Login</button>
           </form>
         </div>`;
     }
