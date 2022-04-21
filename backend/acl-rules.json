@@ -19,6 +19,9 @@
     "login": {
       "get": true,
       "delete": true
+    },
+    "place-my-order": {
+      "post": true
     } 
   },
 

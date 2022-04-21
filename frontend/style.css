@@ -73,6 +73,10 @@ main {
   cursor: pointer;
 }
 
+.checkoutOrder {
+  float: right;
+}
+
 .shoppingCart {
   position: fixed;
   right: 20px;

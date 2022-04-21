@@ -35,6 +35,28 @@ class ShoppingCart {
       document.querySelector('footer').innerHTML =
         this.render();
     }
+
+    async checkout(){
+
+      let reqBody = [];
+      for(let orderRow of this.orderRows) {
+        reqBody.push({
+          quantity: orderRow.quantity,
+          productId: orderRow.product.id
+        });
+      }
+
+      // Place the order by calling /api/place-my-order
+      await(await fetch('/api/place-my-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(reqBody)
+      })).json();
+
+      // Empty the cart
+      this.empty();
+      alert('Thank you for your order!')
+    }
   
     formatSEK(number) {
       return new Intl.NumberFormat(
