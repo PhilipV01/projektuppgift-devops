@@ -30,7 +30,8 @@
         "express-session": "^1.17.2",
         "session": "^0.1.0",
         "store": "^2.0.12",
-        "wdio": "^6.0.1"
+        "wdio": "^6.0.1",
+        "xvfb": "^0.4.0"
     },
     "directories": {
         "test": "test"
