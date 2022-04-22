@@ -6,7 +6,7 @@ class App {
   
     async start() {
   
-      // check if the user is logged in
+      // check if the user is  in
       let rawResult = await fetch('/api/login');
       let result = await rawResult.json();
   
