@@ -1,7 +1,7 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
 const pauseTime = 1000;
 
-Given (/^I am logged in as a registered customer as "(.*)"$/, async(email)=>{
+Given ('I am logged in to grocery shop', async(email)=>{
     // logging in first 
     await browser.url('/');
     let logInButton = await $('.login');
@@ -15,10 +15,7 @@ Given (/^I am logged in as a registered customer as "(.*)"$/, async(email)=>{
     //enter the password 
     await passField.addValue("12345678");
     await browser.pause(pauseTime); 
-    //check 
-    let buttonDisplayed = await $('.logout');
-    let status = "Logout "+email
-    expect(buttonDisplayed).toHaveText(status);
+    
 
 })
 When ('I click on logout button', async()=>{
