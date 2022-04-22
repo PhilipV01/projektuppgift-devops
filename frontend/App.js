@@ -79,7 +79,7 @@ class App {
       });
 
       listen('click', '.checkoutOrder', () => {
-        // need to add method for checkout button found in ShoppingCart.js
+        this.productList.shoppingCart.checkout();
       });
       
   
