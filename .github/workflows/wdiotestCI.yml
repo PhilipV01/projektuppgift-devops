@@ -8,11 +8,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
+    #fetching current ref
+     - uses: actions/checkout@v2 
      #install a chromium
-     - name: Install Chromium
-       run: sudo apt-get install
-     #fetching current ref
-     - uses: actions/checkout@v2
+     - name: Set up chromedriver 
+       uses: nanasess/setup-chromedriver@1
+     - run: |
+          export DISPLAY=:99
+          chromedriver --url-base=/wd/hub &
+          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional  
+    
      #Node 
      - name: Use Node.js ${{ matrix.node-version }}
        uses: actions/setup-node@v2
