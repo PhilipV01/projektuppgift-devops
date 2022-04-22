@@ -20,6 +20,8 @@ jobs:
             cashe: 'npm'
         - run: npm install
         - run: npm run build --if-present
+        
+        - name: Run the test
         - run: npm run wdio 
         - uses: actions/upload-artifact@v1
           if: failure()
