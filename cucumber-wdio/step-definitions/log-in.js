@@ -31,34 +31,34 @@ When('I see the login modal appeared and there are email and password fields to 
 });
 
 When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
-    let inputFiled = await $$('form [name="login"]');
-    await browser.pause(2000);
+    //let inputFiled = await $$('form [name="login"]');
+    //await browser.pause(2000);
     //grab the email field 
-    let emailField = await $('input[name="email"]'); 
+    let emailField = await $('form[name="login"] input[name="email"]'); 
+
     //enter the email 
-    await emailField.click();
+    //await emailField.click();
     await emailField.addValue(email);
     await browser.pause(2000);
     //grab the password field
-    let passField = await $('input[name="password"]');
+    let passField = await $('form[name="login"] input[name="password"]');
     //enter the password 
-    await passField.click();
     await passField.addValue(password);
     await browser.pause(2000); 
 
-  
     
 });
 
 Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(status)=>{
+    //await browser.elementSubmit('form[name="login"]'); 
     // grab the buyButton
-    let logInButton = await $('button[name="submitLogInInfo"]');
+    let logInButton = await $('button[name="submitLoginInfo"]');
     // click the buyButton
     await logInButton.click();
     //grab the logout button 
-    let logOutButton = await $('.logout');
-    await expect(button).toHaveText(status);
+    // let logOutButton = await $('.logout');
+    // await expect(logInButton).toHaveText(status);
     // pause before ending the step
-    await browser.pause(pauseTime);
+    await browser.pause(20000);
 });
 
