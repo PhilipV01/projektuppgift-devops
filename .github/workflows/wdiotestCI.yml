@@ -23,7 +23,7 @@ jobs:
        
      # Run wdio test
      - name: Run wdio test
-       run: BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}} npm run wdio 
+       run: npm run wdio 
        uses: actions/upload-artigact@v1
        if: failure()
        with: 
