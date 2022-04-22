@@ -10,6 +10,9 @@ let db;
 function runQuery(tableName, req, res, parameters, sqlForPreparedStatement, onlyOne = false) {
 
   if (!acl(tableName, req)) {
+    if(!res) {
+      return { _error: 'Not allowed!'};
+    }
     res.status(405);
     res.json({ _error: 'Not allowed!' });
     return;
@@ -27,7 +30,14 @@ function runQuery(tableName, req, res, parameters, sqlForPreparedStatement, only
   }
   if (onlyOne) { result = result[0]; }
   result = result || null;
+  if(!res) {
+    // If no response object is sent to runQuery
+    // then do not send result to the client
+    // just return it instead
+    return result
+  }
   res.status(result ? (result._error ? 500 : 200) : 404);
+  //send result of the query to the client
   setTimeout(() => res.json(result), 1);
 }
 

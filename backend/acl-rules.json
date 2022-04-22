@@ -19,7 +19,10 @@
     "login": {
       "get": true,
       "delete": true
-    }   
+    },
+    "place-my-order": {
+      "post": true
+    } 
   },
 
   "admin": {
@@ -35,6 +38,18 @@
     "login":{
       "get":true,
       "delete":true
+    },
+    "orders": {
+      "get": true,
+      "post": true,
+      "put": true,
+      "delete": true
+    },
+    "orderDetails": {
+      "get": true
+    },
+    "orderSums": {
+      "get":true
     }
   } 
 }
