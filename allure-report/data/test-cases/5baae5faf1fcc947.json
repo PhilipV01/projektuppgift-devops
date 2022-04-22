@@ -1,0 +1,96 @@
+{
+  "uid" : "5baae5faf1fcc947",
+  "name" : "Given that I can see the product list",
+  "fullName" : "Shopping-cart: Clicking a buy button.Given that I can see the product list",
+  "historyId" : "905c8546d5f54d0cf13cbc2864871b4b",
+  "time" : {
+    "start" : 1650609878245,
+    "stop" : 1650609879073,
+    "duration" : 828
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED",
+  "statusTrace" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async World.<anonymous> (/Users/rie/DevOps/DevOpsMoV/projektuppgift-devops/cucumber-wdio/step-definitions/shopping-cart.js:10:3)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED",
+    "statusTrace" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async World.<anonymous> (/Users/rie/DevOps/DevOpsMoV/projektuppgift-devops/cucumber-wdio/step-definitions/shopping-cart.js:10:3)",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1650609878246,
+        "stop" : 1650609879073,
+        "duration" : 827
+      },
+      "status" : "broken",
+      "statusMessage" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at async World.<anonymous> (/Users/rie/DevOps/DevOpsMoV/projektuppgift-devops/cucumber-wdio/step-definitions/shopping-cart.js:10:3)",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "534a1d187dbb7449",
+        "name" : "Request",
+        "source" : "534a1d187dbb7449.json",
+        "type" : "application/json",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given that I can see the product list"
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5baae5faf1fcc947.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

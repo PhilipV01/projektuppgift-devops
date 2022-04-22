@@ -1,4 +1,5 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
+const allure = require('@wdio/allure-reporter').default; 
 const pauseTime = 0;
 
 Given('that I see the Login button', async()=>{

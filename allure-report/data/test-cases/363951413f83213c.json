@@ -1,0 +1,118 @@
+{
+  "uid" : "363951413f83213c",
+  "name" : "",
+  "fullName" : "Shopping-cart: Clicking a buy button.",
+  "historyId" : "a4bb59633b3a482c9282ec72dafa8103",
+  "time" : {
+    "start" : 1650610802668,
+    "stop" : 1650610802668,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 7,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "77f5d3743e7123e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650610797448,
+        "stop" : 1650610797448,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "950bded46fed9682",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650610132316,
+        "stop" : 1650610132316,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "38eadf693a5a8305",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650610130753,
+        "stop" : 1650610130754,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d7ba9d7aade244e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650609905843,
+        "stop" : 1650609905843,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fd37516b0900d35f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650609904250,
+        "stop" : 1650609904251,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7195f964bc6d4913",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650609879073,
+        "stop" : 1650609879073,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "959cd251e62c3622",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650609878244,
+        "stop" : 1650609878244,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "363951413f83213c.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

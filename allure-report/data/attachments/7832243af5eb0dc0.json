@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": ".shoppingCart tr:first-child td"
+}

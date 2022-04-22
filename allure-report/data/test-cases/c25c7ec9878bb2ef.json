@@ -1,0 +1,60 @@
+{
+  "uid" : "c25c7ec9878bb2ef",
+  "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+  "fullName" : "Shopping-cart: Clicking a buy button.When I click on the buy button for \"Juice - Orange, Concentrate\"",
+  "historyId" : "92cfea84ffe35012458574a3696acf52",
+  "time" : {
+    "start" : 1650609879073,
+    "stop" : 0,
+    "duration" : -1650609879073
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : "When I click on the buy button for \"Juice - Orange, Concentrate\""
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c25c7ec9878bb2ef.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

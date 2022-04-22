@@ -1,0 +1,144 @@
+{
+  "uid" : "75fad0a7b316cc03",
+  "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "historyId" : "22b01ac2da38853a38f4ad0eca1a49da",
+  "time" : {
+    "start" : 1650609909800,
+    "stop" : 1650609911847,
+    "duration" : 2047
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element not interactable: element not interactable",
+  "statusTrace" : "element not interactable: element not interactable\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element not interactable: element not interactable",
+    "statusTrace" : "element not interactable: element not interactable\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/elements",
+      "time" : {
+        "start" : 1650609909801,
+        "stop" : 1650609909806,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ba226d958a6b91ff",
+        "name" : "Request",
+        "source" : "ba226d958a6b91ff.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "8e2c6c84b11a8646",
+        "name" : "Response",
+        "source" : "8e2c6c84b11a8646.json",
+        "type" : "application/json",
+        "size" : 2
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1650609911808,
+        "stop" : 1650609911815,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15da9686cad6bcb2",
+        "name" : "Request",
+        "source" : "15da9686cad6bcb2.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "441d5e8b86d9360f",
+        "name" : "Response",
+        "source" : "441d5e8b86d9360f.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element/4e64475d-0d32-4b7b-9148-712f9dfb7de2/click",
+      "time" : {
+        "start" : 1650609911816,
+        "stop" : 1650609911847,
+        "duration" : 31
+      },
+      "status" : "broken",
+      "statusMessage" : "element not interactable: element not interactable\n                  (Session info: chrome=100.0.4896.127)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "75fad0a7b316cc03.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

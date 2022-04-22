@@ -1,0 +1,12 @@
+# Run our tests (expect to generate allure-results)
+# Generate our report 
+# Copy the historty folder from allure report to allure results to keep our historty
+
+# These commands should be included in github action so it can be run every after testing. 
+
+npm run wdio
+allure generate allure-results --clean && allure open  
+rm -r allureresults/historty 
+cp -r allure-report/historty allure-results/history 
+allure open 
+
