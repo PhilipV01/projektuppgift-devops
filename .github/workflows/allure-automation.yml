@@ -1,30 +1,22 @@
-name: Node.js CI
-
-on:
+name: CI
+on: 
   push:
-    branches: [ Allerue-setup]
-
+    branches: [allure-setup] 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run wdio 
-    - run: allure generate allure-results --clean && allure open  
-    - run: rm -r allureresults/historty 
-    - run: cp -r allure-report/historty allure-results/history 
-    - run: allure open
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.13.0
+        - name: Install
+          run: npm install
+        - name: Test
+          run: npm run wdio 
+        - uses: actions/upload-artifact@v1
+          if: failure()
+          with:
+            name: logs
+            path: logs
