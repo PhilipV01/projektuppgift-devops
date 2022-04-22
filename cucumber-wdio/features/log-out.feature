@@ -3,7 +3,7 @@ Feature: Registered customer log out
     by simply clicking logout button. 
 
   Background: I am on grocery shop page  
-    Given I am logged in as a registered customer 
+    Given I am logged in as a registered customer as "anna.larsson@gmail.com"
 
     Scenario: Click the log out button and I'm be able to log out 
         When I click on logout button 
