@@ -18,7 +18,8 @@ jobs:
           cache: 'npm'
      #- run: npm ci
      #- run: npm run bild --if-present
-      
+     - run: npm install
+       name: Install dependencies  
      # Run wdio test
      - run: npm run wdio 
        name: Run wdio test

@@ -1,0 +1,121 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1650621063912' stop='1650621064764'>
+    <name>Log in as a registered user: Open log-in page and log in with entering my email and password</name>
+    <title>Log in as a registered user: Open log-in page and log in with entering my email and password</title>
+    <test-cases>
+        <test-case start='1650621063912' status='passed' stop='1650621063913'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650621063913' status='broken' stop='1650621064762'>
+            <name>Given that I see the Login button</name>
+            <title>Given that I see the Login button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1650621063914' status='broken' stop='1650621064762'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cf81dc01-4081-4699-a216-5355ec599d7e-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: unknown error: net::ERR_CONNECTION_REFUSED</message>
+                <stack-trace>unknown error: unknown error: net::ERR_CONNECTION_REFUSED
+                  (Session info: chrome=100.0.4896.127)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/rie/DevOps/DevOpsMoV/projektuppgift-devops/cucumber-wdio/step-definitions/log-in.js:6:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1650621064763' status='undefined'>
+            <name>When I click on log in buttuon</name>
+            <title>When I click on log in buttuon</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650621064763' status='undefined'>
+            <name>And I see the login modal appeared and there are email and password fields to fill in</name>
+            <title>And I see the login modal appeared and there are email and password fields to fill in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650621064763' status='undefined'>
+            <name>And I enter my email "anna.larsson@gmail.com" in Email and "12345678" in Password</name>
+            <title>And I enter my email "anna.larsson@gmail.com" in Email and "12345678" in Password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650621064763' status='undefined'>
+            <name>Then I click login button and see "logout anna.larsson@gmail.com" so I know I'm logged in</name>
+            <title>Then I click login button and see "logout anna.larsson@gmail.com" so I know I'm logged in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650621064763' status='passed' stop='1650621064763'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
