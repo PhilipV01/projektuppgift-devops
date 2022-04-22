@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     #fetching current ref
-     - uses: actions/checkout@v2 
-     #install a chromium
-     
+     - uses: actions/checkout@v2  
      #Node 
      - name: Use Node.js ${{ matrix.node-version }}
        uses: actions/setup-node@v2
