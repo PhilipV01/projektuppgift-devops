@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
+     #install a chromium
+     - name: Install Chromium
+       run: sudo apt-get install
      #fetching current ref
      - uses: actions/checkout@v2
      #Node 
