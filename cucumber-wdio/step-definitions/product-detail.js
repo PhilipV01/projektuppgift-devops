@@ -6,10 +6,12 @@ Given ('that I see a list of products',async()=>{
 
 });
 
-When(/^I choose and click a product name "(.*)"$/, async (productName) => {
+When(/^I choose and click a product name "(.*)"$/, async (product) => {
    let productName = await $('.productInList h3');
-   expect(productName).toHaveText("Tuna - Yellowfin");
-   await productName.click();
+   await productName.scrollIntoView();
+   expect (product).toHaveAttr(productName);
+    await productName.click();
+    
   });
 
 When ('I see the product name, its detail information and price', async()=>{
@@ -21,8 +23,9 @@ When ('I see the product name, its detail information and price', async()=>{
     expect(price).toHaveText('Price: 61 kr');
 });
 
-Then (/^I click "(.*)" button$/, async()=>{
+Then (/^I click "(.*)" button$/, async(button)=>{
     let backButton = $('.backButton');
+    expect (backButton).toHaveStyle(button);
     await backButton.click();
 
 });
