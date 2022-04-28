@@ -1,11 +1,15 @@
-name: CI with wdio tests
+name: Node.js CI 
 
 on: 
   push:
     branches: [Allerue-setup]
+  #pull_request: 
+   # branches: [main, dev]  
 
 jobs: 
-  build:
+
+  wdio-tests:
+
     runs-on: ubuntu-latest
     steps: 
     #fetching current ref
@@ -16,17 +20,18 @@ jobs:
        with: 
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-     #- run: npm ci
-     #- run: npm run bild --if-present
-     - name: Install dependencies  
-       run: npm install
-       
+     # install npm 
+     - run: npm ci
+     - run: npm run build
+     # intall pm2 
+     - run: npm install -g pm2 
+     # start index.js with pm2 
+     - run: pm2 start backend/index.js 
+     #Chrome just incase.. 
+     - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+     - run: sudo apt install ./google-chrome-stable_current_amd64.deb  
      # Run wdio test
-     - name: Run wdio test
-       run: npm run wdio 
-       #uses: actions/upload-artigact@v1
-       #if: failure()
-       #with: 
-          #name: logs
-          #path: logs
+     - run: HEADLESS_CHROME=yes WDIO_LOG_LEVEL=warn npm run wdio
+   
+      
        
