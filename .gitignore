@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Ignore my database
-./database/products.db
+database/products.db
