@@ -52,6 +52,13 @@ Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(stat
     let logOutButton = await $('.logout');
     expect(logOutButton).toHaveText(status);
     // pause before ending the step
-    await browser.pause();
+    await browser.pause(pauseTime);
 });
 
+Then("I click logout button and I'm logged out now", async()=> {
+    let logOutButton = await $('.logout');
+    await logOutButton.click();
+    await browser.pause(pauseTime);
+    let loginButton = await $ ('.login')
+    expect(loginButton).toHaveText("Login");
+})
