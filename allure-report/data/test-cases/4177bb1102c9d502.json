@@ -1,0 +1,216 @@
+{
+  "uid" : "4177bb1102c9d502",
+  "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..When I choose and click a product name \"Tuna - Yellowfin\"",
+  "historyId" : "daa0800014caa8f26721ed3c152ef393",
+  "time" : {
+    "start" : 1651156930790,
+    "stop" : 1651156931455,
+    "duration" : 665
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156930791,
+        "stop" : 1651156930856,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ca39cb1463ee111",
+        "name" : "Request",
+        "source" : "4ca39cb1463ee111.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "233e56b8537e8b0c",
+        "name" : "Response",
+        "source" : "233e56b8537e8b0c.json",
+        "type" : "application/json",
+        "size" : 1533
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/elements",
+      "time" : {
+        "start" : 1651156930860,
+        "stop" : 1651156930930,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f90da1e42b187ac8",
+        "name" : "Request",
+        "source" : "f90da1e42b187ac8.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "6376187b00b98a2b",
+        "name" : "Response",
+        "source" : "6376187b00b98a2b.json",
+        "type" : "application/json",
+        "size" : 2
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/elements",
+      "time" : {
+        "start" : 1651156931361,
+        "stop" : 1651156931378,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "27db70a0f3bda1c8",
+        "name" : "Request",
+        "source" : "27db70a0f3bda1c8.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "1d6d646096fd32e4",
+        "name" : "Response",
+        "source" : "1d6d646096fd32e4.json",
+        "type" : "application/json",
+        "size" : 9102
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931419,
+        "stop" : 1651156931431,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ee83f70dd92ca0c",
+        "name" : "Request",
+        "source" : "4ee83f70dd92ca0c.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "53fe11bbf4758511",
+        "name" : "Response",
+        "source" : "53fe11bbf4758511.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1651156931432,
+        "stop" : 1651156931436,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8772a56550a6f1aa",
+        "name" : "Request",
+        "source" : "8772a56550a6f1aa.json",
+        "type" : "application/json",
+        "size" : 302
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element/180e4873-5019-47dc-871b-7d2b9faa1ef8/click",
+      "time" : {
+        "start" : 1651156931437,
+        "stop" : 1651156931454,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "When I choose and click a product name \"Tuna - Yellowfin\""
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4177bb1102c9d502.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

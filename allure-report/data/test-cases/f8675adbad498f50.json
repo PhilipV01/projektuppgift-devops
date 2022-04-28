@@ -1,0 +1,156 @@
+{
+  "uid" : "f8675adbad498f50",
+  "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.And I see the login modal appeared and there are email and password fields to fill in",
+  "historyId" : "38c57abdbf4184d09c1f2a581d80fb4c",
+  "time" : {
+    "start" : 1651156931000,
+    "stop" : 1651156931018,
+    "duration" : 18
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931000,
+        "stop" : 1651156931007,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ed9f78db7954e7a0",
+        "name" : "Request",
+        "source" : "ed9f78db7954e7a0.json",
+        "type" : "application/json",
+        "size" : 55
+      }, {
+        "uid" : "81bc3fca7dc734fe",
+        "name" : "Response",
+        "source" : "81bc3fca7dc734fe.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931008,
+        "stop" : 1651156931015,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bf6fc49eaaa3dfad",
+        "name" : "Request",
+        "source" : "bf6fc49eaaa3dfad.json",
+        "type" : "application/json",
+        "size" : 56
+      }, {
+        "uid" : "5eda408e9d91fb91",
+        "name" : "Response",
+        "source" : "5eda408e9d91fb91.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /session/:sessionId/element/89ad639f-4b95-4c37-8bf0-3ddfa2e32298/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22password%22%5D",
+      "time" : {
+        "start" : 1651156931016,
+        "stop" : 0,
+        "duration" : -1651156931016
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/89ad639f-4b95-4c37-8bf0-3ddfa2e32298/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22email%22%5D",
+        "time" : {
+          "start" : 1651156931017,
+          "stop" : 0,
+          "duration" : -1651156931017
+        },
+        "status" : "unknown",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I see the login modal appeared and there are email and password fields to fill in"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f8675adbad498f50.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

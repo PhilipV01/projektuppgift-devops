@@ -1,26 +1,37 @@
 {
-  "total" : 2,
+  "total" : 3,
   "items" : [ {
+    "uid" : "4ee3cccd4ae29bc5b45f00c60a4b9d9c",
+    "name" : "Shopping-cart: Clicking a buy button",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 1,
+      "total" : 4
+    }
+  }, {
     "uid" : "9b857ada5aa36e6c6cdbea74a4dcf4d1",
     "name" : "Log in as a registered user: Open log-in page and log in with entering my email and password",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
-      "unknown" : 1,
-      "total" : 6
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
     }
   }, {
-    "uid" : "4ee3cccd4ae29bc5b45f00c60a4b9d9c",
-    "name" : "Shopping-cart: Clicking a buy button",
+    "uid" : "1b51d66cd9fe9252b3ebb3c88cfee33d",
+    "name" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again.",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 4
+      "total" : 6
     }
   } ]
 }

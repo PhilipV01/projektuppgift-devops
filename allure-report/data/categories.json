@@ -2,29 +2,29 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "element not interactable: element not interactable",
+      "name" : "Error: expect(received).toBeTruthy()",
       "children" : [ {
-        "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
-        "uid" : "c936b8d6fbf968d9",
-        "parentUid" : "3bdcf9610d56042fbc02fc662361e656",
-        "status" : "broken",
+        "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+        "uid" : "de1021c225dc98e7",
+        "parentUid" : "8c1a70ec8ad811da32b38e9e8c743c1e",
+        "status" : "failed",
         "time" : {
-          "start" : 1650610797972,
-          "stop" : 1650610800049,
-          "duration" : 2077
+          "start" : 1651156930864,
+          "stop" : 1651156930953,
+          "duration" : 89
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 3,
-        "retriesStatusChange" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
         "parameters" : [ "chrome-100.0.4896.127" ]
       } ],
-      "uid" : "3bdcf9610d56042fbc02fc662361e656"
+      "uid" : "8c1a70ec8ad811da32b38e9e8c743c1e"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

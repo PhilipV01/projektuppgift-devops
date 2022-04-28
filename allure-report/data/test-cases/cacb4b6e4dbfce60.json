@@ -1,0 +1,93 @@
+{
+  "uid" : "cacb4b6e4dbfce60",
+  "name" : "Given that I see a list of products",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..Given that I see a list of products",
+  "historyId" : "2adcb62a29b86376dd59fbc8f54109f6",
+  "time" : {
+    "start" : 1651156929896,
+    "stop" : 1651156930790,
+    "duration" : 894
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1651156929897,
+        "stop" : 1651156930789,
+        "duration" : 892
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d60569b75847d36e",
+        "name" : "Request",
+        "source" : "d60569b75847d36e.json",
+        "type" : "application/json",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "Given that I see a list of products"
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cacb4b6e4dbfce60.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}
