@@ -1,0 +1,32 @@
+name: CI with wdio tests
+
+on: 
+  push:
+    branches: [Allerue-setup]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    #fetching current ref
+     - uses: actions/checkout@v2  
+     #Node 
+     - name: Use Node.js ${{ matrix.node-version }}
+       uses: actions/setup-node@v2
+       with: 
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+     #- run: npm ci
+     #- run: npm run bild --if-present
+     - name: Install dependencies  
+       run: npm install
+       
+     # Run wdio test
+     - name: Run wdio test
+       run: npm run wdio 
+       #uses: actions/upload-artigact@v1
+       #if: failure()
+       #with: 
+          #name: logs
+          #path: logs
+       

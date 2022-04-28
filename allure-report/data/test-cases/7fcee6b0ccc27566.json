@@ -1,0 +1,86 @@
+{
+  "uid" : "7fcee6b0ccc27566",
+  "name" : "Then I click login button and see \"logout anna.larsson@gmail.com\" so I know I'm logged in",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.Then I click login button and see \"logout anna.larsson@gmail.com\" so I know I'm logged in",
+  "historyId" : "a89e355c1ebebd84d72b40f8dd393c08",
+  "time" : {
+    "start" : 1650610800049,
+    "stop" : 0,
+    "duration" : -1650610800049
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I click login button and see \"logout anna.larsson@gmail.com\" so I know I'm logged in"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d33a9f3f21fd6d87",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1650610133611,
+        "stop" : 0,
+        "duration" : -1650610133611
+      }
+    }, {
+      "uid" : "5557c015f29e2cec",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1650609911847,
+        "stop" : 0,
+        "duration" : -1650609911847
+      }
+    }, {
+      "uid" : "e0708b183169e26f",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1650609879042,
+        "stop" : 0,
+        "duration" : -1650609879042
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7fcee6b0ccc27566.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

@@ -1,4 +1,7 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
+const allure = require('@wdio/allure-reporter').default; 
+// -> Need to set up severity for each test: allure.addSeverity('x'); 
+// x = blocker, critical, normal, normal, minor, trival  
 const pauseTime = 0;
 
 // browser.url - navigate to a page/url
@@ -7,10 +10,12 @@ const pauseTime = 0;
 // element: click, setValue
 
 Given('that I can see the product list', async () => {
+  allure.addSeverity('blocker'); // in case of no web server? 
   await browser.url('/');
 });
 
 When(/^I click on the buy button for "(.*)"$/, async (productName) => {
+  allure.addSeverity('critical');
   // grab all divs that have the class productInList
   let products = await $$('.productInList');
   // create an empty variable called foundProduct
@@ -34,6 +39,7 @@ When(/^I click on the buy button for "(.*)"$/, async (productName) => {
 });
 
 Then(/^(\d*) item of "(.*)" should be added to the cart$/, async (quantity, productName) => {
+  allure.addSeverity('critical');
   // get all the table cells in the first row of the table
   // that is the shoppingList/cart
   let tds = await $$('.shoppingCart tr:first-child td');

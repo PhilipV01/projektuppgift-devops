@@ -1,0 +1,175 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Given that I see the Login button",
+    "uid" : "6ec78459a617f4b5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610797276,
+      "stop" : 1650610797889,
+      "duration" : 613
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Given that I can see the product list",
+    "uid" : "9294b35ae3d06ced",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610797448,
+      "stop" : 1650610801832,
+      "duration" : 4384
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "When I click on log in buttuon",
+    "uid" : "7cc4534e587ce7c6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610797889,
+      "stop" : 1650610797953,
+      "duration" : 64
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+    "uid" : "b149bffdc3263f3d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610797953,
+      "stop" : 1650610797972,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+    "uid" : "c936b8d6fbf968d9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1650610797972,
+      "stop" : 1650610800049,
+      "duration" : 2077
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Then I click login button and see \"logout anna.larsson@gmail.com\" so I know I'm logged in",
+    "uid" : "7fcee6b0ccc27566",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1650610800049,
+      "stop" : 0,
+      "duration" : -1650610800049
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "",
+    "uid" : "5760ea96686e3a8f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610800050,
+      "stop" : 1650610800050,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 7,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+    "uid" : "f617b086d5330743",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610801832,
+      "stop" : 1650610802641,
+      "duration" : 809
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
+    "uid" : "a5f23987774653c4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610802641,
+      "stop" : 1650610802668,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "",
+    "uid" : "363951413f83213c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1650610802668,
+      "stop" : 1650610802668,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 7,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  } ]
+}

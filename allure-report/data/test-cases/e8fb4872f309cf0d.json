@@ -1,0 +1,60 @@
+{
+  "uid" : "e8fb4872f309cf0d",
+  "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.And I see the login modal appeared and there are email and password fields to fill in",
+  "historyId" : "38c57abdbf4184d09c1f2a581d80fb4c",
+  "time" : {
+    "start" : 1650609879041,
+    "stop" : 0,
+    "duration" : -1650609879041
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I see the login modal appeared and there are email and password fields to fill in"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e8fb4872f309cf0d.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

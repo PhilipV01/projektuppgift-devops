@@ -1,0 +1,60 @@
+{
+  "uid" : "950bded46fed9682",
+  "name" : "",
+  "fullName" : "Shopping-cart: Clicking a buy button.",
+  "historyId" : "a4bb59633b3a482c9282ec72dafa8103",
+  "time" : {
+    "start" : 1650610132316,
+    "stop" : 1650610132316,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "950bded46fed9682.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

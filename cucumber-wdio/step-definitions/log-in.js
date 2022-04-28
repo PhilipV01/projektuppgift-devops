@@ -1,5 +1,10 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
+<<<<<<< HEAD
 const pauseTime = 1000;
+=======
+const allure = require('@wdio/allure-reporter').default; 
+const pauseTime = 0;
+>>>>>>> Allerue-setup
 
 Given('that I see the Login button', async()=>{
     await browser.url('/');

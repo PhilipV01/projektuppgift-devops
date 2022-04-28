@@ -1,0 +1,101 @@
+[ {
+  "uid" : "b149bffdc3263f3d",
+  "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+  "time" : {
+    "start" : 1650610797953,
+    "stop" : 1650610797972,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "363951413f83213c",
+  "name" : "",
+  "time" : {
+    "start" : 1650610802668,
+    "stop" : 1650610802668,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f617b086d5330743",
+  "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+  "time" : {
+    "start" : 1650610801832,
+    "stop" : 1650610802641,
+    "duration" : 809
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9294b35ae3d06ced",
+  "name" : "Given that I can see the product list",
+  "time" : {
+    "start" : 1650610797448,
+    "stop" : 1650610801832,
+    "duration" : 4384
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c936b8d6fbf968d9",
+  "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "time" : {
+    "start" : 1650610797972,
+    "stop" : 1650610800049,
+    "duration" : 2077
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7cc4534e587ce7c6",
+  "name" : "When I click on log in buttuon",
+  "time" : {
+    "start" : 1650610797889,
+    "stop" : 1650610797953,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5f23987774653c4",
+  "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
+  "time" : {
+    "start" : 1650610802641,
+    "stop" : 1650610802668,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5760ea96686e3a8f",
+  "name" : "",
+  "time" : {
+    "start" : 1650610800050,
+    "stop" : 1650610800050,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fcee6b0ccc27566",
+  "name" : "Then I click login button and see \"logout anna.larsson@gmail.com\" so I know I'm logged in",
+  "time" : {
+    "start" : 1650610800049,
+    "stop" : 0,
+    "duration" : -1650610800049
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "6ec78459a617f4b5",
+  "name" : "Given that I see the Login button",
+  "time" : {
+    "start" : 1650610797276,
+    "stop" : 1650610797889,
+    "duration" : 613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

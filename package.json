@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@wdio/allure-reporter": "^7.19.5",
         "@wdio/cli": "^7.19.3",
         "@wdio/cucumber-framework": "^7.19.3",
         "@wdio/local-runner": "^7.19.3",
@@ -29,7 +30,8 @@
         "express-session": "^1.17.2",
         "session": "^0.1.0",
         "store": "^2.0.12",
-        "wdio": "^6.0.1"
+        "wdio": "^6.0.1",
+        "xvfb": "^0.4.0"
     },
     "directories": {
         "test": "test"

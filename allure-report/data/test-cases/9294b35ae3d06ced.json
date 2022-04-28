@@ -1,0 +1,121 @@
+{
+  "uid" : "9294b35ae3d06ced",
+  "name" : "Given that I can see the product list",
+  "fullName" : "Shopping-cart: Clicking a buy button.Given that I can see the product list",
+  "historyId" : "905c8546d5f54d0cf13cbc2864871b4b",
+  "time" : {
+    "start" : 1650610797448,
+    "stop" : 1650610801832,
+    "duration" : 4384
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1650610797449,
+        "stop" : 1650610801830,
+        "duration" : 4381
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "54d4fbb7cbad1cb3",
+        "name" : "Request",
+        "source" : "54d4fbb7cbad1cb3.json",
+        "type" : "application/json",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given that I can see the product list"
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "300667daf15731ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650610130754,
+        "stop" : 1650610131415,
+        "duration" : 661
+      }
+    }, {
+      "uid" : "704ea251e63c8ef9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650609904251,
+        "stop" : 1650609905009,
+        "duration" : 758
+      }
+    }, {
+      "uid" : "5baae5faf1fcc947",
+      "status" : "broken",
+      "statusDetails" : "unknown error: unknown error: net::ERR_CONNECTION_REFUSED",
+      "time" : {
+        "start" : 1650609878245,
+        "stop" : 1650609879073,
+        "duration" : 828
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9294b35ae3d06ced.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}
