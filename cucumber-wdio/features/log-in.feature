@@ -9,4 +9,5 @@ Feature: Log in as a registered user
         When I click on log in buttuon
         And I see the login modal appeared and there are email and password fields to fill in
         And  I enter my email "anna.larsson@gmail.com" in Email and "12345678" in Password
-        Then I click login button and see "logout anna.larsson@gmail.com" so I know I'm logged in
+        Then I click login button and see "Logout anna.larsson@gmail.com" so I know I'm logged in
+        And I click logout button and I'm logged out now 
