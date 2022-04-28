@@ -32,6 +32,10 @@ jobs:
      #- run: sudo apt install ./google-chrome-stable_current_amd64.deb  
      # Run wdio test
      - run: HEADLESS_CHROME=yes WDIO_LOG_LEVEL=warn npm run wdio
+     - run: allure generate allure-results 
+     - run: rm -r allure-results/history 
+     - run: cp -r allure-report/history allure-results/history 
+     - run: allure open 
    
       
        
