@@ -2,44 +2,41 @@ const passwordEncryptor = require('./passwordEncryptor');
 
 module.exports = function (app, runQuery, db) {
 
-  app.get('/api/my-orders', (req, res) => {
+  app.post('/api/place-my-order', (req, res) => {
 
+    // get the id of the logged in user
     let userId = req.session.user?.id;
 
-    runQuery('my-orders', req, res, { customerId: userId }, `
-      SELECT * FROM orderDetails WHERE customerId = :customerId
-    `);
+    // Read the request.body
+    // expect to be an array of objects
+    // where each object has the form
+    // { productId: x, quantity: y }
+    let orderRows = req.body
 
-  });
-
-  function editMyUserInfo(req, res) {
-
-    delete req.body.userRole;
-
-    let userId = req.session.user?.id;
-
-    let queryParameters = { ...req.body, id: userId };
-
-    if (queryParameters.password) {
-      queryParameters.password = passwordEncryptor(queryParameters.password);
+    if(!(orderRows instanceof Array)) {
+      res.json({ _error: 'The request should be an array!' });
+      return;
     }
 
-    // If you knew about this route
-    // you could elevated your userRole directly because it lacked
-    delete req.body.userRole;
+    let result = runQuery('place-my-order', req, null, { userId },
+      'INSERT INTO orders (userId) VALUES (:userId)'
+    );
 
-    runQuery('edit-my-user-info', req, res, queryParameters, `
-        UPDATE users
-        SET ${Object.keys(req.body).map(x => x + ' = :' + x)}
-        WHERE id = :id
-    `);
+    let orderId = result.lastInsertRowid;
 
-    let stmt = db.prepare('SELECT * FROM users WHERE id = :id');
-    let updatedUserInfo = stmt.all({ id: queryParameters.id })[0];
-    delete updatedUserInfo.password;
-    req.session.user = updatedUserInfo;
-  }
-  app.put('/api/edit-my-user-info', editMyUserInfo);
-  app.patch('/api/edit-my-user-info', editMyUserInfo);
+    for(let orderRow of orderRows) {
+      runQuery('place-my-order', req, null, { ...orderRow, orderId },
+      ` INSERT INTO orderRows (orderId, productId, quantity)
+        VALUES (:orderId, :productId, :quantity)`);
+    }
 
+    res.json({orderId, status: 'Created the order'});
+
+    /*runQuery('place-my-order', req, res, { customerId: userId }, `
+      SELECT * FROM orderDetails WHERE customerId = :customerId
+    `);*/
+    
+
+
+  });
 }

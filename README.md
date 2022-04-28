@@ -13,4 +13,9 @@ When your feature is done and you want to merge back into *dev* please make sure
 3. When everything is working you can then merge your feature branch into *dev*.
 
 -----------------------------------------------------------------
-## Github
+## About the database
+If you dont have a database named products.db in the database folder the backend won't work. Copy the products-template.db and rename the copy products.db before you start the server!
+
+If you **REALLY** want to commit changes tp the database, new tables etc, then make those changes in products-template.db and tell everyone in the team that they should copy it again and rename as described above.
+
+------------------------------------------------------------------
