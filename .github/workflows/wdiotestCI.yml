@@ -38,7 +38,7 @@ jobs:
      - run: allure generate allure-results --clean 
      - run: rm -r allureresults/historty 
      - run: cp -r allure-report/history allure-results/history 
-     #- run: allure open 
+      
    
       
        
