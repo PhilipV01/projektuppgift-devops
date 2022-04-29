@@ -2,7 +2,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [Allerue-setup] #[dev]
+    branches: [Allerue-setup,action-setup] #[dev]
   #pull_request: 
    # branches: [dev]  
 
@@ -67,7 +67,7 @@ jobs:
         # start up our backend
       - run: pm2 start backend/index.js
         # run our api tests
-      - run: npm run api-tests
+      - run: npm run api-tests # <- !!! collection name in package.json need to be changed once we got proper tests
 
 
       
