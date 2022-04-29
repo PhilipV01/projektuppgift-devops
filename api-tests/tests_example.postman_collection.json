@@ -13,9 +13,8 @@
 					"script": {
 						"exec": [
 							"let response = pm.response.json();",
-							"let errorMsg = {\"_error\": \"Not allowed\"}",
 							"pm.test('Expect no one logged in so get an error message', () => {",
-							"    pm.expect(response).to.equal(error);",
+							"    pm.expect(response._error).to.equal(\"Not allowed\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -107,9 +106,8 @@
 					"script": {
 						"exec": [
 							"let response = pm.response.json();",
-							"let logOutMsg = {\"success\": \"logged out \"}",
 							"pm.test('Expect the user can logout', () => {",
-							"    pm.expect(response).to.equal(logOutMsg);",
+							"    pm.expect(response.success).to.equal(\"logged out\");",
 							"});"
 						],
 						"type": "text/javascript"
