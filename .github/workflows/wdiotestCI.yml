@@ -41,7 +41,7 @@ jobs:
      - run: npm run wdio
      - run: allure generate allure-results --clean 
      - run: cp -r allure-report/history allure-results/history 
-     - run: allure open 
+     #- run: allure open 
    
       
        
