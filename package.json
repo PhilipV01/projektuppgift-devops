@@ -6,7 +6,8 @@
     "scripts": {
         "test": "jest",
         "wdio": "wdio run wdio.conf.js",
-        "start": "node backend/index"
+        "start": "node backend/index",
+        "api-tests": "npm run api-tests" 
     },
     "keywords": [],
     "author": "",
