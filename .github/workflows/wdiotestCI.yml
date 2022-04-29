@@ -35,9 +35,9 @@ jobs:
      - run: npm i -g allure-commandline 
      # Run wdio test
      - run: cat >.env <<EOF
-            HEADLESS_CHROME=yes 
-            WDIO_LOG_LEVEL=warn 
-            EOF
+    HEADLESS_CHROME=yes 
+    WDIO_LOG_LEVEL=warn 
+    EOF
      - run: npm run wdio
      - run: allure generate allure-results --clean 
      - run: cp -r allure-report/history allure-results/history 
