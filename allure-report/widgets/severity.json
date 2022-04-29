@@ -1,170 +1,170 @@
 [ {
-  "uid" : "cacb4b6e4dbfce60",
-  "name" : "Given that I see a list of products",
+  "uid" : "3b92a19939a36eaa",
+  "name" : "Then I click login button and see \"Logout anna.larsson@gmail.com\" so I know I'm logged in",
   "time" : {
-    "start" : 1651156929896,
-    "stop" : 1651156930790,
-    "duration" : 894
+    "start" : 1651223677937,
+    "stop" : 1651223678993,
+    "duration" : 1056
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "451ee69488d005b",
-  "name" : "Then I click \"Back to product list\" button",
+  "uid" : "6b64d5ad9c66d924",
+  "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
   "time" : {
-    "start" : 1651156931485,
-    "stop" : 1651156931529,
-    "duration" : 44
+    "start" : 1651223675691,
+    "stop" : 1651223675759,
+    "duration" : 68
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ae06cd8e309839fc",
+  "uid" : "b6f2d4d36f3708d0",
+  "name" : "And I click logout button and I'm logged out now",
+  "time" : {
+    "start" : 1651223678993,
+    "stop" : 1651223680051,
+    "duration" : 1058
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f83cb913243e250",
+  "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+  "time" : {
+    "start" : 1651223675673,
+    "stop" : 1651223676570,
+    "duration" : 897
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "142ea7e084bef4ab",
   "name" : "",
   "time" : {
-    "start" : 1651156931530,
-    "stop" : 1651156931530,
+    "start" : 1651223676599,
+    "stop" : 1651223676599,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "de1021c225dc98e7",
-  "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+  "uid" : "e3b54e1ec104b3c7",
+  "name" : "And I see the product name, its detail information and price",
   "time" : {
-    "start" : 1651156930864,
-    "stop" : 1651156930953,
-    "duration" : 89
+    "start" : 1651223675759,
+    "stop" : 1651223675797,
+    "duration" : 38
   },
-  "status" : "failed",
-  "severity" : "critical"
+  "status" : "passed",
+  "severity" : "normal"
 }, {
-  "uid" : "6762372087a24e1a",
+  "uid" : "dc926a6d6eeab5af",
+  "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+  "time" : {
+    "start" : 1651223675748,
+    "stop" : 1651223675776,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "316e25f6c224fd98",
+  "name" : "When I click on log in buttuon",
+  "time" : {
+    "start" : 1651223675677,
+    "stop" : 1651223675748,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6108288c63e4e64",
+  "name" : "Given that I see the Login button",
+  "time" : {
+    "start" : 1651223674718,
+    "stop" : 1651223675677,
+    "duration" : 959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b540373830835ff",
+  "name" : "And I am back to the product list",
+  "time" : {
+    "start" : 1651223675849,
+    "stop" : 1651223675851,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c2d21fe4b7d817f",
   "name" : "Given that I can see the product list",
   "time" : {
-    "start" : 1651156929925,
-    "stop" : 1651156930864,
-    "duration" : 939
+    "start" : 1651223674724,
+    "stop" : 1651223675673,
+    "duration" : 949
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "f8e472da7e2ead2",
-  "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
-  "time" : {
-    "start" : 1651156931018,
-    "stop" : 1651156933115,
-    "duration" : 2097
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "881a5839ff54ee8b",
-  "name" : "Then I click login button and see \"Logout anna.larsson@gmail.com\" so I know I'm logged in",
-  "time" : {
-    "start" : 1651156933115,
-    "stop" : 1651156934192,
-    "duration" : 1077
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5aa952889a3d16cb",
-  "name" : "And I see the product name, its detail information and price",
-  "time" : {
-    "start" : 1651156931455,
-    "stop" : 1651156931484,
-    "duration" : 29
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4177bb1102c9d502",
-  "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
-  "time" : {
-    "start" : 1651156930790,
-    "stop" : 1651156931455,
-    "duration" : 665
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b4b4832725c52f5c",
+  "uid" : "d8710f608690caa8",
   "name" : "",
   "time" : {
-    "start" : 1651156930953,
-    "stop" : 1651156930953,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "62926a48a98b5464",
-  "name" : "And I am back to the product list",
-  "time" : {
-    "start" : 1651156931529,
-    "stop" : 1651156931530,
+    "start" : 1651223680051,
+    "stop" : 1651223680052,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1b06d058eb93823b",
+  "uid" : "2134b559091d924a",
+  "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "time" : {
+    "start" : 1651223675776,
+    "stop" : 1651223677937,
+    "duration" : 2161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85a55b538b1b9cdd",
+  "name" : "Then I click \"Back to product list\" button",
+  "time" : {
+    "start" : 1651223675797,
+    "stop" : 1651223675849,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea765cb282ba2559",
   "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
   "time" : {
-    "start" : 1651156930953,
-    "stop" : 0,
-    "duration" : -1651156930953
+    "start" : 1651223676570,
+    "stop" : 1651223676599,
+    "duration" : 29
   },
-  "status" : "unknown",
-  "severity" : "normal"
+  "status" : "passed",
+  "severity" : "critical"
 }, {
-  "uid" : "f8675adbad498f50",
-  "name" : "And I see the login modal appeared and there are email and password fields to fill in",
+  "uid" : "9c71394da2550641",
+  "name" : "Given that I see a list of products",
   "time" : {
-    "start" : 1651156931000,
-    "stop" : 1651156931018,
-    "duration" : 18
+    "start" : 1651223674706,
+    "stop" : 1651223675691,
+    "duration" : 985
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "46af309405f5da82",
-  "name" : "When I click on log in buttuon",
-  "time" : {
-    "start" : 1651156930864,
-    "stop" : 1651156931000,
-    "duration" : 136
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5424ec511948534",
+  "uid" : "1264a1c0f5ad2ff1",
   "name" : "",
   "time" : {
-    "start" : 1651156935247,
-    "stop" : 1651156935247,
+    "start" : 1651223675851,
+    "stop" : 1651223675851,
     "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4d1565b404a226fb",
-  "name" : "Given that I see the Login button",
-  "time" : {
-    "start" : 1651156929884,
-    "stop" : 1651156930864,
-    "duration" : 980
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c9b46f89c0281f3b",
-  "name" : "And I click logout button and I'm logged out now",
-  "time" : {
-    "start" : 1651156934192,
-    "stop" : 1651156935246,
-    "duration" : 1054
   },
   "status" : "passed",
   "severity" : "normal"

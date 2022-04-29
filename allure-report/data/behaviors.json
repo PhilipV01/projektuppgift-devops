@@ -2,116 +2,14 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "Given that I see the Login button",
-    "uid" : "4d1565b404a226fb",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156929884,
-      "stop" : 1651156930864,
-      "duration" : 980
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
     "name" : "Given that I see a list of products",
-    "uid" : "cacb4b6e4dbfce60",
+    "uid" : "9c71394da2550641",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1651156929896,
-      "stop" : 1651156930790,
-      "duration" : 894
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "Given that I can see the product list",
-    "uid" : "6762372087a24e1a",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156929925,
-      "stop" : 1651156930864,
-      "duration" : 939
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
-    "uid" : "4177bb1102c9d502",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156930790,
-      "stop" : 1651156931455,
-      "duration" : 665
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "When I click on log in buttuon",
-    "uid" : "46af309405f5da82",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156930864,
-      "stop" : 1651156931000,
-      "duration" : 136
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
-    "uid" : "de1021c225dc98e7",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1651156930864,
-      "stop" : 1651156930953,
-      "duration" : 89
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "",
-    "uid" : "b4b4832725c52f5c",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156930953,
-      "stop" : 1651156930953,
-      "duration" : 0
+      "start" : 1651223674706,
+      "stop" : 1651223675691,
+      "duration" : 985
     },
     "flaky" : false,
     "newFailed" : false,
@@ -121,173 +19,275 @@
     "retriesStatusChange" : false,
     "parameters" : [ "chrome-100.0.4896.127" ]
   }, {
-    "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
-    "uid" : "1b06d058eb93823b",
+    "name" : "Given that I see the Login button",
+    "uid" : "c6108288c63e4e64",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "unknown",
+    "status" : "passed",
     "time" : {
-      "start" : 1651156930953,
-      "stop" : 0,
-      "duration" : -1651156930953
+      "start" : 1651223674718,
+      "stop" : 1651223675677,
+      "duration" : 959
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Given that I can see the product list",
+    "uid" : "4c2d21fe4b7d817f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223674724,
+      "stop" : 1651223675673,
+      "duration" : 949
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "When I click on the buy button for \"Juice - Orange, Concentrate\"",
+    "uid" : "9f83cb913243e250",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675673,
+      "stop" : 1651223676570,
+      "duration" : 897
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : true,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : true,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "When I click on log in buttuon",
+    "uid" : "316e25f6c224fd98",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675677,
+      "stop" : 1651223675748,
+      "duration" : 71
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
+    "uid" : "6b64d5ad9c66d924",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675691,
+      "stop" : 1651223675759,
+      "duration" : 68
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
     "parameters" : [ "chrome-100.0.4896.127" ]
   }, {
     "name" : "And I see the login modal appeared and there are email and password fields to fill in",
-    "uid" : "f8675adbad498f50",
+    "uid" : "dc926a6d6eeab5af",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1651156931000,
-      "stop" : 1651156931018,
-      "duration" : 18
+      "start" : 1651223675748,
+      "stop" : 1651223675776,
+      "duration" : 28
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
-    "uid" : "f8e472da7e2ead2",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156931018,
-      "stop" : 1651156933115,
-      "duration" : 2097
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
     "parameters" : [ "chrome-100.0.4896.127" ]
   }, {
     "name" : "And I see the product name, its detail information and price",
-    "uid" : "5aa952889a3d16cb",
+    "uid" : "e3b54e1ec104b3c7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1651156931455,
-      "stop" : 1651156931484,
+      "start" : 1651223675759,
+      "stop" : 1651223675797,
+      "duration" : 38
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+    "uid" : "2134b559091d924a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675776,
+      "stop" : 1651223677937,
+      "duration" : 2161
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Then I click \"Back to product list\" button",
+    "uid" : "85a55b538b1b9cdd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675797,
+      "stop" : 1651223675849,
+      "duration" : 52
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "And I am back to the product list",
+    "uid" : "7b540373830835ff",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675849,
+      "stop" : 1651223675851,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "",
+    "uid" : "1264a1c0f5ad2ff1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223675851,
+      "stop" : 1651223675851,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 3,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
+    "uid" : "ea765cb282ba2559",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223676570,
+      "stop" : 1651223676599,
       "duration" : 29
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : true,
     "parameters" : [ "chrome-100.0.4896.127" ]
   }, {
-    "name" : "Then I click \"Back to product list\" button",
-    "uid" : "451ee69488d005b",
+    "name" : "",
+    "uid" : "142ea7e084bef4ab",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1651156931485,
-      "stop" : 1651156931529,
-      "duration" : 44
+      "start" : 1651223676599,
+      "stop" : 1651223676599,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
+    "retriesCount" : 3,
     "retriesStatusChange" : false,
     "parameters" : [ "chrome-100.0.4896.127" ]
   }, {
-    "name" : "And I am back to the product list",
-    "uid" : "62926a48a98b5464",
+    "name" : "Then I click login button and see \"Logout anna.larsson@gmail.com\" so I know I'm logged in",
+    "uid" : "3b92a19939a36eaa",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1651156931529,
-      "stop" : 1651156931530,
+      "start" : 1651223677937,
+      "stop" : 1651223678993,
+      "duration" : 1056
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "And I click logout button and I'm logged out now",
+    "uid" : "b6f2d4d36f3708d0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223678993,
+      "stop" : 1651223680051,
+      "duration" : 1058
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-100.0.4896.127" ]
+  }, {
+    "name" : "",
+    "uid" : "d8710f608690caa8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1651223680051,
+      "stop" : 1651223680052,
       "duration" : 1
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "",
-    "uid" : "ae06cd8e309839fc",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156931530,
-      "stop" : 1651156931530,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 1,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "Then I click login button and see \"Logout anna.larsson@gmail.com\" so I know I'm logged in",
-    "uid" : "881a5839ff54ee8b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156933115,
-      "stop" : 1651156934192,
-      "duration" : 1077
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "And I click logout button and I'm logged out now",
-    "uid" : "c9b46f89c0281f3b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156934192,
-      "stop" : 1651156935246,
-      "duration" : 1054
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-100.0.4896.127" ]
-  }, {
-    "name" : "",
-    "uid" : "5424ec511948534",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1651156935247,
-      "stop" : 1651156935247,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 1,
+    "retriesCount" : 3,
     "retriesStatusChange" : false,
     "parameters" : [ "chrome-100.0.4896.127" ]
   } ]

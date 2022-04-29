@@ -1,17 +1,6 @@
 {
   "total" : 3,
   "items" : [ {
-    "uid" : "4ee3cccd4ae29bc5b45f00c60a4b9d9c",
-    "name" : "Shopping-cart: Clicking a buy button",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 1,
-      "total" : 4
-    }
-  }, {
     "uid" : "9b857ada5aa36e6c6cdbea74a4dcf4d1",
     "name" : "Log in as a registered user: Open log-in page and log in with entering my email and password",
     "statistic" : {
@@ -32,6 +21,17 @@
       "passed" : 6,
       "unknown" : 0,
       "total" : 6
+    }
+  }, {
+    "uid" : "4ee3cccd4ae29bc5b45f00c60a4b9d9c",
+    "name" : "Shopping-cart: Clicking a buy button",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
     }
   } ]
 }

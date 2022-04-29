@@ -1,0 +1,192 @@
+{
+  "uid" : "ea765cb282ba2559",
+  "name" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
+  "fullName" : "Shopping-cart: Clicking a buy button.Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart",
+  "historyId" : "f914cbf6175149258887df7ce4e92f8c",
+  "time" : {
+    "start" : 1651223676570,
+    "stop" : 1651223676599,
+    "duration" : 29
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/elements",
+      "time" : {
+        "start" : 1651223676571,
+        "stop" : 1651223676577,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fec08cdd85d0cf8b",
+        "name" : "Request",
+        "source" : "fec08cdd85d0cf8b.json",
+        "type" : "application/json",
+        "size" : 75
+      }, {
+        "uid" : "709860f9a5537873",
+        "name" : "Response",
+        "source" : "709860f9a5537873.json",
+        "type" : "application/json",
+        "size" : 366
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/2649eb94-105a-46a4-a8df-18775aab1437/text",
+      "time" : {
+        "start" : 1651223676579,
+        "stop" : 1651223676587,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "41556e3ac32d70b",
+        "name" : "Response",
+        "source" : "41556e3ac32d70b.json",
+        "type" : "application/json",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/78b5892e-2a36-4839-b5e9-479a83c4021c/text",
+      "time" : {
+        "start" : 1651223676588,
+        "stop" : 1651223676594,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ee2d2566c4514e2",
+        "name" : "Response",
+        "source" : "4ee2d2566c4514e2.json",
+        "type" : "application/json",
+        "size" : 29
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1651223676595,
+        "stop" : 1651223676597,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "90d22849a9600724",
+        "name" : "Request",
+        "source" : "90d22849a9600724.json",
+        "type" : "application/json",
+        "size" : 302
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then 1 item of \"Juice - Orange, Concentrate\" should be added to the cart"
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "cb2f0c9437d8d3a5",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1651156930953,
+        "stop" : 0,
+        "duration" : -1651156930953
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 1,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "1b06d058eb93823b",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1651156930953,
+          "stop" : 0,
+          "duration" : -1651156930953
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ea765cb282ba2559.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

@@ -1,0 +1,105 @@
+{
+  "uid" : "d8710f608690caa8",
+  "name" : "",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.",
+  "historyId" : "53b09e6e2332a0cefd9c85cba655e688",
+  "time" : {
+    "start" : 1651223680051,
+    "stop" : 1651223680052,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1d5d3e00ca06e4bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651223674716,
+        "stop" : 1651223674718,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "72b5d08050642f72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156935247,
+        "stop" : 1651156935247,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "90b73d4e22a1c8a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156929884,
+        "stop" : 1651156929884,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "5424ec511948534",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156935247,
+          "stop" : 1651156935247,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d8710f608690caa8.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

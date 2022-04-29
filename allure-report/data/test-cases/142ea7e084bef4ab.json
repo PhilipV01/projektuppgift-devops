@@ -1,0 +1,105 @@
+{
+  "uid" : "142ea7e084bef4ab",
+  "name" : "",
+  "fullName" : "Shopping-cart: Clicking a buy button.",
+  "historyId" : "a4bb59633b3a482c9282ec72dafa8103",
+  "time" : {
+    "start" : 1651223676599,
+    "stop" : 1651223676599,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testClass",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Shopping-cart: Clicking a buy button"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "232f01533a9cdf20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651223674724,
+        "stop" : 1651223674724,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f16c6bf63451a09e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156930953,
+        "stop" : 1651156930953,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "67af6929e3e4d642",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156929924,
+        "stop" : 1651156929925,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "b4b4832725c52f5c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156930953,
+          "stop" : 1651156930953,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "142ea7e084bef4ab.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

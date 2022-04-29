@@ -1,0 +1,139 @@
+{
+  "uid" : "a8099ac89d656f37",
+  "name" : "Then I click \"Back to product list\" button",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..Then I click \"Back to product list\" button",
+  "historyId" : "a8327e6b103d97ccc815e53f85a39be5",
+  "time" : {
+    "start" : 1651156931485,
+    "stop" : 1651156931529,
+    "duration" : 44
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931485,
+        "stop" : 1651156931489,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dadd8899493ec7e7",
+        "name" : "Request",
+        "source" : "dadd8899493ec7e7.json",
+        "type" : "application/json",
+        "size" : 55
+      }, {
+        "uid" : "556987d040aba3e6",
+        "name" : "Response",
+        "source" : "556987d040aba3e6.json",
+        "type" : "application/json",
+        "size" : 107
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/0228490d-4bff-4809-a5f8-4ac9e588435b/click",
+      "time" : {
+        "start" : 1651156931501,
+        "stop" : 0,
+        "duration" : -1651156931501
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/0228490d-4bff-4809-a5f8-4ac9e588435b/css/0",
+        "time" : {
+          "start" : 1651156931502,
+          "stop" : 1651156931528,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4153e1a41d64649d",
+      "name" : "Response",
+      "source" : "4153e1a41d64649d.json",
+      "type" : "application/json",
+      "size" : 15
+    }, {
+      "uid" : "af7608f56554a207",
+      "name" : "Response",
+      "source" : "af7608f56554a207.json",
+      "type" : "application/json",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I click \"Back to product list\" button"
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a8099ac89d656f37.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}
