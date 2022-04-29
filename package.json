@@ -7,7 +7,7 @@
         "test": "jest",
         "wdio": "wdio run wdio.conf.js",
         "start": "node backend/index",
-        "api-tests": "npm run api-tests"
+        "api-tests": "newman run api-tests/login-out-tests.postman_collection.json"
     },
     "keywords": [],
     "author": "",
