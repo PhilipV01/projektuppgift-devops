@@ -30,6 +30,9 @@ jobs:
      #Chrome just incase.. 
      #- run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
      #- run: sudo apt install ./google-chrome-stable_current_amd64.deb  
+     # installing Allure test report 
+     - run: npm install @wdio/allure-reporter --save-dev
+     - run: npm i -g allure-commandline 
      # Run wdio test
      - run: HEADLESS_CHROME=yes WDIO_LOG_LEVEL=warn npm run wdio
      - run: allure generate allure-results 
