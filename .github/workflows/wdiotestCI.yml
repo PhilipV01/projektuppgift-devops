@@ -38,6 +38,38 @@ jobs:
      - run: allure generate allure-results --clean 
      - run: rm -r allureresults/historty 
      - run: cp -r allure-report/history allure-results/history 
+
+     #REST-api
+    api-tests:
+
+      runs-on: ubuntu-latest
+
+      strategy:
+        matrix:
+          node-version: [16.x]
+  
+      steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+        # install newman globally so we can run
+        # postman collections
+      - run: npm install -g newman 
+        # install pm2 so we can run our node.js
+        # based backend without blocking the terminal
+      - run: npm install -g pm2
+        # Copy db-template to realdb
+      #- run: cp backend/databse/bookshop-template.db backend/database/bookshop.db
+        # start up our backend
+      - run: pm2 start backend/index.js
+        # run our api tests
+      - run: npm run api-tests
+
+
       
    
       
