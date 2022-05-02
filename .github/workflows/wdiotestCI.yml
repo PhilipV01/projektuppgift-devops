@@ -2,7 +2,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [dev,Allerue-setup, action-setup,feature-jest-test] #[dev]
+    branches: [dev,feature-CI-CD,feature-jest-test] #[dev]
   pull_request: 
     branches: [dev]  
 
@@ -40,7 +40,7 @@ jobs:
      - run: cp -r allure-report/history allure-results/history 
 
      #REST-api
-     
+
   api-tests:
 
     runs-on: ubuntu-latest
