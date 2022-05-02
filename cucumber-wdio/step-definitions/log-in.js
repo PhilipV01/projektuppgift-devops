@@ -17,14 +17,8 @@ When('I click on log in buttuon',async()=>{
 
 When('I see the login modal appeared and there are email and password fields to fill in',async()=>{
      //grab loginModal 
-     let loginModal= await $('.loginModal');
-     //input fields
-     let input = await $('.modal input');
-     expect(loginModal).toHaveAttr(input);
-     //email 
-     expect(input).toHaveAttr('form[name="login"] input[name="email"]');
-     //password 
-     expect(input).toHaveAttr('form[name="login"] input[name="password"]'); 
+     let loginModal= await $('.loginModal').waitForDisplayed();
+    
 });
 
 When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
