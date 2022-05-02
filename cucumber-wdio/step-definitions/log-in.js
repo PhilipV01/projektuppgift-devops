@@ -1,5 +1,5 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
-const pauseTime = 4000;
+const pauseTime = 5000;
 
 
 Given('that I see the Login button', async()=>{
@@ -56,4 +56,4 @@ Then("I click logout button and I'm logged out now", async()=> {
     await browser.pause(pauseTime);
     let loginButton = await $ ('.login')
     expect(loginButton).toHaveText("Login");
-})
+}) //
