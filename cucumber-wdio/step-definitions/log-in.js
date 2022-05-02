@@ -1,5 +1,5 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
-const pauseTime = 1000;
+const pauseTime = 4000;
 
 
 Given('that I see the Login button', async()=>{
