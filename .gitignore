@@ -103,8 +103,7 @@ dist
 .tern-port
 
 #unsucsessful test need to be ignored for now
-cucumber-wdio/features/prouct-detail.feature
-cucumber-wdio/step-definitions/prouct-detail.js
+temp/*
 
 
 
