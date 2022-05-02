@@ -90,6 +90,16 @@ jobs:
     - run: pm2 start backend/index.js
     - run: npm run jest
 
+#  golive:
+#     # demand that the 3 tests jobs suceeed before running go love
+#     needs: [api-tests,wdio-tests,jest-tests]
+#     #Only run this job if the environment protection rules are fulfilled
+#     # (this case, reviewer need to approves and we need to be on dev branch)
+#     environment: "Dev server"
+#     runs-on: ubuntu-latest
+#     steps:
+#       #call check out sever to checkout/pull our repo
+#     - run: curl http://sub.yogadev.se/${{secrets.DEPLOYMENT_KEY}}
 
 
       
