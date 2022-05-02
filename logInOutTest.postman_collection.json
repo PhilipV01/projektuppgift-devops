@@ -43,28 +43,27 @@
 			"name": "Log in as registered user",
 			"event": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
 					"listen": "test",
 					"script": {
 						"exec": [
 							"let response = pm.response.json();",
 							"",
 							"pm.test('Expect to be logged in as Anna - expect anna is a registered customer', () => {",
-							"    pm.expect(response.id).to.equal(2);",
 							"    pm.expect(response.firstName).to.equal(\"Anna\");",
 							"    pm.expect(response.lastName).to.equal(\"Larsson\");",
 							"    pm.expect(response.email).to.equal(\"anna.larsson@gmail.com\");",
 							"    pm.expect(response.userRole).to.equal(\"user\");",
 							"",
 							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
 						],
 						"type": "text/javascript"
 					}
