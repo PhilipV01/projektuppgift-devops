@@ -1,5 +1,6 @@
 # Ignore db
 database/products.db
+#backend/database/products.db 
 # Logs
 logs
 *.log
