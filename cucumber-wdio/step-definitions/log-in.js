@@ -45,7 +45,7 @@ Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(stat
     let statusButton = await $('.logout').waitForDisplayed({timeout:5000});
     expect(statusButton).toHaveText(status);
     // pause before ending the step
-    //await browser.pause(pauseTime);
+    await browser.pause(pauseTime);
 });
 
 Then("I click logout button and I'm logged out now", async()=> {
