@@ -50,6 +50,7 @@ Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(stat
 
 Then("I click logout button and I'm logged out now", async()=> {
     let logOutButton = await $('.logout');
+    await logOutButton.waitForEnabled({timeout:5000});
     await logOutButton.click();
     await browser.pause(pauseTime);
     let loginButton = await $ ('.login')
