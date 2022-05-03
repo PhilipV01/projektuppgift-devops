@@ -37,7 +37,7 @@ jobs:
      # Run wdio test
      - run: npm run wdio #HEADLESS_CHROME=yes WDIO_LOG_LEVEL=warn
      - run: allure generate allure-results --clean 
-     - run: rm -r allureresults/historty 
+     - run: rm -r allure-results/histor  
      - run: cp -r allure-report/history allure-results/history 
 
      #REST-api
