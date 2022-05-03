@@ -17,12 +17,12 @@ When('I click on log in buttuon',async()=>{
 
 When('I see the login modal appeared and there are email and password fields to fill in',async()=>{
      //grab loginModal 
-     let loginModal= await $('.loginModal').waitForDisplayed({timeout:6000});
+     let loginModal= await $('.loginModal').waitForDisplayed({timeout:5000});
     
 });
 
 When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
-    await $('form[name="login"]').waitForEnabled({timeout:6000});
+    await $('form[name="login"]').waitForEnabled({timeout:5000});
     //grab the email field 
     let emailField = await $('form[name="login"] input[name="email"]'); 
     //enter the email 
@@ -42,10 +42,10 @@ Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(stat
     // click the buyButton
     await logInButton.click();
     //grab the logout button 
-    let logOutButton = await $('.logout');
-    expect(logOutButton).toHaveText(status);
+    let statusButton = await $('.logout').waitForDisplayed({timeout:5000});
+    expect(statusButton).toHaveText(status);
     // pause before ending the step
-    await browser.pause(pauseTime);
+    //await browser.pause(pauseTime);
 });
 
 Then("I click logout button and I'm logged out now", async()=> {
