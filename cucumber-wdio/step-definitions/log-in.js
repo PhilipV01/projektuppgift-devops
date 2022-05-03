@@ -17,21 +17,19 @@ When('I click on log in buttuon',async()=>{
 
 When('I see the login modal appeared and there are email and password fields to fill in',async()=>{
      //grab loginModal 
-     let loginModal= await $('.loginModal').waitForDisplayed();
+     let loginModal= await $('.loginModal').waitForDisplayed({timeout:6000});
     
 });
 
 When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
+   //await $('form[name="login"]').waitForDisplayed({timeout:6000});
     //grab the email field 
     let emailField = await $('form[name="login"] input[name="email"]'); 
-
     //enter the email 
-    //await emailField.click();
     await emailField.addValue(email);
     await browser.pause(pauseTime);
     //grab the password field
     let passField = await $('form[name="login"] input[name="password"]');
-    //enter the password 
     await passField.addValue(password);
     await browser.pause(pauseTime); 
 
