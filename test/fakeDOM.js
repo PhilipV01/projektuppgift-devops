@@ -11,7 +11,7 @@ const path = require('path');
 
 // load our index file
 const dom = new JSDOM(fs.readFileSync(
-  path.join(__dirname, '../index.html')
+  path.join(__dirname, '../frontend/index.html')
 ));
 
 // now fake our document object needed for
