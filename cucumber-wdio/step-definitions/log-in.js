@@ -1,5 +1,5 @@
 const {Given,When,Then} = require('@wdio/cucumber-framework');
-const pauseTime = 5000;
+const pauseTime = 3000;
 
 
 Given('that I see the Login button', async()=>{
@@ -22,7 +22,7 @@ When('I see the login modal appeared and there are email and password fields to 
 });
 
 When(/^I enter my email "(.*)" in Email and "(.*)" in Password$/, async(email,password)=> {
-   //await $('form[name="login"]').waitForDisplayed({timeout:6000});
+    await $('form[name="login"]').waitForEnabled({timeout:6000});
     //grab the email field 
     let emailField = await $('form[name="login"] input[name="email"]'); 
     //enter the email 
