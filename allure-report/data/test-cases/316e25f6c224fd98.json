@@ -1,0 +1,141 @@
+{
+  "uid" : "316e25f6c224fd98",
+  "name" : "When I click on log in buttuon",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.When I click on log in buttuon",
+  "historyId" : "6d7a13960df4a60f718c5affbece4975",
+  "time" : {
+    "start" : 1651223675677,
+    "stop" : 1651223675748,
+    "duration" : 71
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651223675678,
+        "stop" : 1651223675714,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5a9e0acb519803d4",
+        "name" : "Request",
+        "source" : "5a9e0acb519803d4.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "a7b253a4fd15594d",
+        "name" : "Response",
+        "source" : "a7b253a4fd15594d.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/9f94b723-2f98-4ee0-8481-c6ecfc9efd18/click",
+      "time" : {
+        "start" : 1651223675716,
+        "stop" : 1651223675748,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "When I click on log in buttuon"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9e9c747b3bbb8d97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156930864,
+        "stop" : 1651156931000,
+        "duration" : 136
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "46af309405f5da82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156930864,
+          "stop" : 1651156931000,
+          "duration" : 136
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "316e25f6c224fd98.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

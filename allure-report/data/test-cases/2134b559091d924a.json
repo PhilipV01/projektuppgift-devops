@@ -1,0 +1,315 @@
+{
+  "uid" : "2134b559091d924a",
+  "name" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password",
+  "historyId" : "22b01ac2da38853a38f4ad0eca1a49da",
+  "time" : {
+    "start" : 1651223675776,
+    "stop" : 1651223677937,
+    "duration" : 2161
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651223675776,
+        "stop" : 1651223675781,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b4f0182e7155b07",
+        "name" : "Request",
+        "source" : "b4f0182e7155b07.json",
+        "type" : "application/json",
+        "size" : 86
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/d9b7d59a-7235-4e32-a426-57f5595f6c19/value",
+      "time" : {
+        "start" : 1651223675795,
+        "stop" : 1651223675886,
+        "duration" : 91
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "651ec119450ef3e3",
+        "name" : "Request",
+        "source" : "651ec119450ef3e3.json",
+        "type" : "application/json",
+        "size" : 38
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22password%22%5D",
+      "time" : {
+        "start" : 1651223676274,
+        "stop" : 1651223676278,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22email%22%5D",
+        "time" : {
+          "start" : 1651223676275,
+          "stop" : 1651223676277,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22email%22%5D",
+      "time" : {
+        "start" : 1651223676775,
+        "stop" : 1651223676780,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22password%22%5D",
+        "time" : {
+          "start" : 1651223676777,
+          "stop" : 1651223676779,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651223676888,
+        "stop" : 1651223676901,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "41771cc76541291e",
+        "name" : "Request",
+        "source" : "41771cc76541291e.json",
+        "type" : "application/json",
+        "size" : 89
+      }, {
+        "uid" : "22a0bf3774634226",
+        "name" : "Response",
+        "source" : "22a0bf3774634226.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/9a18f62e-7817-4aaa-a053-46848ed4e5ba/value",
+      "time" : {
+        "start" : 1651223676903,
+        "stop" : 1651223676935,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bf38d8333ca9e18",
+        "name" : "Request",
+        "source" : "6bf38d8333ca9e18.json",
+        "type" : "application/json",
+        "size" : 24
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22email%22%5D",
+      "time" : {
+        "start" : 1651223677276,
+        "stop" : 1651223677280,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22password%22%5D",
+        "time" : {
+          "start" : 1651223677277,
+          "stop" : 1651223677279,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22email%22%5D",
+      "time" : {
+        "start" : 1651223677776,
+        "stop" : 1651223677785,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/bf45a6b5-2c56-4a52-b25b-7134d78a8ab1/attribute/form%5Bname%3D%22login%22%5D%20input%5Bname%3D%22password%22%5D",
+        "time" : {
+          "start" : 1651223677779,
+          "stop" : 1651223677783,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "17f082c3830742fb",
+      "name" : "Response",
+      "source" : "17f082c3830742fb.json",
+      "type" : "application/json",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I enter my email \"anna.larsson@gmail.com\" in Email and \"12345678\" in Password"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ce9bcb108352c792",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156931018,
+        "stop" : 1651156933115,
+        "duration" : 2097
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f8e472da7e2ead2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156931018,
+          "stop" : 1651156933115,
+          "duration" : 2097
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2134b559091d924a.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651156929923' stop='1651156930954'>
+    <name>Shopping-cart: Clicking a buy button</name>
+    <title>Shopping-cart: Clicking a buy button</title>
+    <test-cases>
+        <test-case start='1651156929924' status='passed' stop='1651156929925'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651156929925' status='passed' stop='1651156930864'>
+            <name>Given that I can see the product list</name>
+            <title>Given that I can see the product list</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+                <label name='severity' value='blocker'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651156929926' status='passed' stop='1651156930863'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7f2cac03-1460-46db-a004-402cc420b48e-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1651156930864' status='failed' stop='1651156930953'>
+            <name>When I click on the buy button for "Juice - Orange, Concentrate"</name>
+            <title>When I click on the buy button for "Juice - Orange, Concentrate"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+                <label name='severity' value='critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651156930865' status='passed' stop='1651156930947'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='48be8a37-d016-4e65-96de-290f391823b3-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='a1aaeb1c-bb7d-448b-b1e6-73da1ce6d67c-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: expect(received).toBeTruthy()</message>
+                <stack-trace>Error: expect(received).toBeTruthy()
+                
+                Received: undefined
+                    at World.&lt;anonymous> (/Users/rie/DevOps/DevOpsMoV/projektuppgift-devops/cucumber-wdio/step-definitions/shopping-cart.js:32:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1651156930953' status='undefined'>
+            <name>Then 1 item of "Juice - Orange, Concentrate" should be added to the cart</name>
+            <title>Then 1 item of "Juice - Orange, Concentrate" should be added to the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651156930953' status='passed' stop='1651156930953'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
