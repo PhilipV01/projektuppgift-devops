@@ -25,7 +25,7 @@ jobs:
      - run: npm run build --if-present
      # intall pm2 
      - run: npm install -g pm2 
-     - run: cp /database/products-template.db /database/products.db
+     - run: cp database/products-template.db database/products.db
      # start index.js with pm2 
      - run: pm2 start backend/index.js 
      #Chrome just incase.. 
@@ -66,7 +66,7 @@ jobs:
         # based backend without blocking the terminal
       - run: npm install -g pm2
         # Copy db-template to realdb
-      - run: cp /database/products-template.db /database/products.db
+      - run: cp database/products-template.db database/products.db
         # start up our backend
       - run: pm2 start backend/index.js
         # run our api tests
@@ -90,7 +90,7 @@ jobs:
     - run: npm ci 
     - run: npm run build  --if-present         
     - run: npm install -g pm2
-   #- run: cp database/products-template.db /database/products.db
+   #- run: cp database/products-template.db database/products.db
     - run: pm2 start backend/index.js
     - run: npm run jest
 
