@@ -41,6 +41,7 @@ Then(/^I click login button and see "(.*)" so I know I'm logged in$/, async(stat
     let logInButton = await $('button[name="submitLoginInfo"]');
     // click the buyButton
     await logInButton.click();
+    await browser.pause(pauseTime);
     //grab the logout button 
     let statusButton = await $('.logout').waitForDisplayed({timeout:5000});
     expect(statusButton).toHaveText(status);
