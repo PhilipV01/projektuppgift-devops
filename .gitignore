@@ -1,6 +1,6 @@
 # Ignore db
 database/products.db
-#backend/database/products.db 
+#OBS!backend/database/products.db #<- uset this after having moved db 
 # Logs
 logs
 *.log

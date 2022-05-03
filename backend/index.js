@@ -1,8 +1,8 @@
 const path = require('path');
 const betterSqlite3 = require('better-sqlite3');
 const db = betterSqlite3('./database/products.db');
-//after moving db folder to backend, change path 
-//const db = betterSqlite3(path.join(__dirname, ('../database','products-temolate.db'));
+//OBS! after moving db folder to backend, change path 
+//const db = betterSqlite3(path.join(__dirname, '/database','products.db');
 const port = process.env.PORT || 3000;
 const express = require('express');
 
