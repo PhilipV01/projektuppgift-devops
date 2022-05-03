@@ -1,0 +1,202 @@
+{
+  "uid" : "755e41b0aacfe3f7",
+  "name" : "And I see the product name, its detail information and price",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..And I see the product name, its detail information and price",
+  "historyId" : "d18b0113365ae830c8ceaad856ace2ca",
+  "time" : {
+    "start" : 1651156931455,
+    "stop" : 1651156931484,
+    "duration" : 29
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931455,
+        "stop" : 1651156931462,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "73702866911182fa",
+        "name" : "Request",
+        "source" : "73702866911182fa.json",
+        "type" : "application/json",
+        "size" : 55
+      }, {
+        "uid" : "68dce085df9c58ad",
+        "name" : "Response",
+        "source" : "68dce085df9c58ad.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651156931463,
+        "stop" : 0,
+        "duration" : -1651156931463
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/b5e9175a-a161-48d2-9349-147b8d6107e5/text",
+        "time" : {
+          "start" : 1651156931465,
+          "stop" : 1651156931470,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "996deb3ae7df7201",
+          "name" : "Response",
+          "source" : "996deb3ae7df7201.json",
+          "type" : "application/json",
+          "size" : 83
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1651156931471,
+          "stop" : 1651156931482,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "GET /session/:sessionId/element/581b8a96-711d-45b5-87f6-b83ce6eca0c4/text",
+          "time" : {
+            "start" : 1651156931472,
+            "stop" : 1651156931478,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "492511fb53f3162c",
+            "name" : "Response",
+            "source" : "492511fb53f3162c.json",
+            "type" : "application/json",
+            "size" : 24
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "f1a8567c3d8c1553",
+          "name" : "Request",
+          "source" : "f1a8567c3d8c1553.json",
+          "type" : "application/json",
+          "size" : 50
+        }, {
+          "uid" : "817b8bbffeea74eb",
+          "name" : "Response",
+          "source" : "817b8bbffeea74eb.json",
+          "type" : "application/json",
+          "size" : 83
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "GET /session/:sessionId/element/8ee6605f-13b8-4d28-96cc-8fe50392bdb4/text",
+        "time" : {
+          "start" : 1651156931484,
+          "stop" : 0,
+          "duration" : -1651156931484
+        },
+        "status" : "unknown",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "2cd6608de8f6e782",
+        "name" : "Request",
+        "source" : "2cd6608de8f6e782.json",
+        "type" : "application/json",
+        "size" : 56
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "And I see the product name, its detail information and price"
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "755e41b0aacfe3f7.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

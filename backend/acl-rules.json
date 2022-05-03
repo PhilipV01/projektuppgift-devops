@@ -1,0 +1,55 @@
+{
+  "visitor": {
+    "products": {
+      "get": true
+    },
+    "login": {
+      "get": true,
+      "post":true
+    },
+    "users": {
+      "post": true
+    }
+  },    
+  
+  "user": {
+    "products": {
+      "get": true
+    },
+    "login": {
+      "get": true,
+      "delete": true
+    },
+    "place-my-order": {
+      "post": true
+    } 
+  },
+
+  "admin": {
+    "tablesAndViews": {
+      "get": true
+    },
+    "products":{
+      "get": true,
+      "post": true,
+      "put": true,
+      "delete": true
+    },
+    "login":{
+      "get":true,
+      "delete":true
+    },
+    "orders": {
+      "get": true,
+      "post": true,
+      "put": true,
+      "delete": true
+    },
+    "orderDetails": {
+      "get": true
+    },
+    "orderSums": {
+      "get":true
+    }
+  } 
+}

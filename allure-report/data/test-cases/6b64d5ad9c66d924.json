@@ -1,0 +1,162 @@
+{
+  "uid" : "6b64d5ad9c66d924",
+  "name" : "When I choose and click a product name \"Tuna - Yellowfin\"",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..When I choose and click a product name \"Tuna - Yellowfin\"",
+  "historyId" : "daa0800014caa8f26721ed3c152ef393",
+  "time" : {
+    "start" : 1651223675691,
+    "stop" : 1651223675759,
+    "duration" : 68
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651223675692,
+        "stop" : 1651223675714,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3059591b6e0bbbfe",
+        "name" : "Request",
+        "source" : "3059591b6e0bbbfe.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "92370ca01d43c6f2",
+        "name" : "Response",
+        "source" : "92370ca01d43c6f2.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1651223675717,
+        "stop" : 1651223675728,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "273f6c534e348306",
+        "name" : "Request",
+        "source" : "273f6c534e348306.json",
+        "type" : "application/json",
+        "size" : 302
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/db2bcafe-29bd-422d-824c-474b08df79ae/click",
+      "time" : {
+        "start" : 1651223675729,
+        "stop" : 1651223675758,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "When I choose and click a product name \"Tuna - Yellowfin\""
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e3b94486583bfc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156930790,
+        "stop" : 1651156931455,
+        "duration" : 665
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4177bb1102c9d502",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156930790,
+          "stop" : 1651156931455,
+          "duration" : 665
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6b64d5ad9c66d924.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

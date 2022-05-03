@@ -1,0 +1,168 @@
+{
+  "uid" : "85a55b538b1b9cdd",
+  "name" : "Then I click \"Back to product list\" button",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..Then I click \"Back to product list\" button",
+  "historyId" : "a8327e6b103d97ccc815e53f85a39be5",
+  "time" : {
+    "start" : 1651223675797,
+    "stop" : 1651223675849,
+    "duration" : 52
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1651223675798,
+        "stop" : 1651223675805,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f9b9020b39ec4f94",
+        "name" : "Request",
+        "source" : "f9b9020b39ec4f94.json",
+        "type" : "application/json",
+        "size" : 55
+      }, {
+        "uid" : "de6e06b73cebb8c8",
+        "name" : "Response",
+        "source" : "de6e06b73cebb8c8.json",
+        "type" : "application/json",
+        "size" : 107
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/5bc687a0-c420-4ed8-b0bb-38b1bd5f3dd6/click",
+      "time" : {
+        "start" : 1651223675816,
+        "stop" : 0,
+        "duration" : -1651223675816
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "GET /session/:sessionId/element/5bc687a0-c420-4ed8-b0bb-38b1bd5f3dd6/css/0",
+        "time" : {
+          "start" : 1651223675817,
+          "stop" : 1651223675849,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b794a3bebec2feea",
+      "name" : "Response",
+      "source" : "b794a3bebec2feea.json",
+      "type" : "application/json",
+      "size" : 15
+    }, {
+      "uid" : "a247922c33ad6aa3",
+      "name" : "Response",
+      "source" : "a247922c33ad6aa3.json",
+      "type" : "application/json",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I click \"Back to product list\" button"
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a8099ac89d656f37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156931485,
+        "stop" : 1651156931529,
+        "duration" : 44
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "451ee69488d005b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156931485,
+          "stop" : 1651156931529,
+          "duration" : 44
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "85a55b538b1b9cdd.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}
