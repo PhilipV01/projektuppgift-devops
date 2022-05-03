@@ -1,0 +1,105 @@
+{
+  "uid" : "1264a1c0f5ad2ff1",
+  "name" : "",
+  "fullName" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again..",
+  "historyId" : "991f07a5a0927c966f87a922e124d14f",
+  "time" : {
+    "start" : 1651223675851,
+    "stop" : 1651223675851,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testClass",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "See a product detail page: Jump to a detail infomation by click the product name and go back to the list again."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "75eb8eb95f6200d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651223674705,
+        "stop" : 1651223674706,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c48b0d19db30f352",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156931530,
+        "stop" : 1651156931530,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8222bd2fd10fd737",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156929895,
+        "stop" : 1651156929896,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ae06cd8e309839fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156931530,
+          "stop" : 1651156931530,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1264a1c0f5ad2ff1.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}

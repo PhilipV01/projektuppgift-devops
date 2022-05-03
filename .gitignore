@@ -1,3 +1,5 @@
+# Ignore db
+database/products.db
 # Logs
 logs
 *.log
@@ -68,9 +70,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -103,5 +102,9 @@ dist
 # TernJS port file
 .tern-port
 
-# Ignore my database
-./database/products.db
+#unsucsessful test need to be ignored for now
+temp/*
+
+
+
+

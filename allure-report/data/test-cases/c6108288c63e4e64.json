@@ -1,0 +1,120 @@
+{
+  "uid" : "c6108288c63e4e64",
+  "name" : "Given that I see the Login button",
+  "fullName" : "Log in as a registered user: Open log-in page and log in with entering my email and password.Given that I see the Login button",
+  "historyId" : "82263615be6e4a7b06690d05e64fafe1",
+  "time" : {
+    "start" : 1651223674718,
+    "stop" : 1651223675677,
+    "duration" : 959
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1651223674720,
+        "stop" : 1651223675676,
+        "duration" : 956
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8e7e192a7fc140b6",
+        "name" : "Request",
+        "source" : "8e7e192a7fc140b6.json",
+        "type" : "application/json",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testClass",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given that I see the Login button"
+  }, {
+    "name" : "package",
+    "value" : "Log in as a registered user: Open log-in page and log in with entering my email and password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.127"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5c943599454fbae5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651156929884,
+        "stop" : 1651156930864,
+        "duration" : 980
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4d1565b404a226fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651156929884,
+          "stop" : 1651156930864,
+          "duration" : 980
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c6108288c63e4e64.json",
+  "parameterValues" : [ "chrome-100.0.4896.127" ]
+}
