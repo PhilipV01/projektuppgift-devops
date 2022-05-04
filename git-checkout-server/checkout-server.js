@@ -8,12 +8,12 @@ const dbTemplatePath = path.join(__dirname, ('../database','products-temolate.db
 //OBS@ const dbTemplatePath = path.join(__dirname, ('../backend','database','products-temolate.db'))
 const dbPath = path.join(__dirname,('../database','products.db'));
 //For github secret 
-const secrets = process.env.DEPLOYMENT_KEY
-/*if(!secrets) {
+const secrets = process.env.DEPLOYMENT_KEY;
+if(!secrets) {
     //if secret key is not provided, it will be shut down 
     console.log('You need to provide the DEPOLOYMENT_KEY as an environmental variable');
-    Process.exit(1);
-    } */
+    process.exit(1);
+} 
 
 //A function that does all necessary git checkout clean up etc
 function checkout(){
