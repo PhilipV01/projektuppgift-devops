@@ -50,6 +50,9 @@
     },
     "orderSums": {
       "get":true
+    },
+    "users": {
+      "get":true
     }
   } 
 }
