@@ -4,8 +4,7 @@ const http = require ('http');
 const {execSync} = require('child_process');
 //path helps build file path
 const path = require('path');
-const dbTemplatePath = path.join(__dirname, ('../database','products-temolate.db'));
-//OBS@ const dbTemplatePath = path.join(__dirname, ('../backend','database','products-temolate.db'))
+const dbTemplatePath = path.join(__dirname, ('../backend','database','products-temolate.db'))
 const dbPath = path.join(__dirname,('../database','products.db'));
 //For github secret 
 const secrets = process.env.DEPLOYMENT_KEY;
