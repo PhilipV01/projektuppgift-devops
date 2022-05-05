@@ -10,9 +10,9 @@ describe('Test grabEl', () => {
 
     expect(content).toBe(`<h1>Our grocery shopー量販店</h1>
     <div class="navButtons">
-      <button class="showCart">Show cart</button>
+      <button class="showCart">🛒Show cart</button>
       <button class="login">Login</button>
-      <button class="register">Register</button>
+      <button class="register">🤝Register</button>
       <button class="logout">Logout</button>
     </div>`);
 
