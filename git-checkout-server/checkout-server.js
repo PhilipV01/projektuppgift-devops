@@ -37,24 +37,3 @@ const server = http.createServer(function (req,res){
 //start up the server 
 server.listen(8080,()=>console.log('Listening on http://localhost:8080'));
 
-
-/*ON SERVER 
- cd /var/www/ 
- git clone  our repo 
- git config  
- cd reponame 
-  //then we can use git here 
-  //set up reverse proxy for each port 
-  // check.groceryshop.se: 8080
- pm2 start path/reverse-proxy-app.js --name reverse-proxy
- pm2 start /path/program-index.js  --name main-app
- pm2 start /git-checkout-server/checkout-server.js --name checkout-server
-
-
-
-
-
-
- 
- 
- */
