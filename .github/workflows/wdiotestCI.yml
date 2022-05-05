@@ -2,7 +2,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [dev,feature-CI-CD,feature-jest-test] #[dev]
+    branches: [dev,main,setup-CD,] #[dev]
   pull_request: 
     branches: [dev, main]  
 
@@ -25,7 +25,7 @@ jobs:
      - run: npm run build --if-present
      # intall pm2 
      - run: npm install -g pm2 
-     - run: cp database/products-template.db database/products.db
+     - run: cp backend/database/products-template.db backend/database/products.db
      # start index.js with pm2 
      - run: pm2 start backend/index.js 
      #Chrome just incase.. 
@@ -66,7 +66,7 @@ jobs:
         # based backend without blocking the terminal
       - run: npm install -g pm2
         # Copy db-template to realdb
-      - run: cp database/products-template.db database/products.db
+      - run: cp backend/database/products-template.db backend/database/products.db
         # start up our backend
       - run: pm2 start backend/index.js
         # run our api tests
@@ -90,21 +90,21 @@ jobs:
     - run: npm ci 
     - run: npm run build  --if-present         
     - run: npm install -g pm2
-   #- run: cp database/products-template.db database/products.db
+    - run: cp backend/database/products-template.db backend/database/products.db
     - run: pm2 start backend/index.js
     - run: npm run jest
 
 #CD
-#  golive:
-#     # demand that the 3 tests jobs suceeed before running go love
-#     needs: [api-tests,wdio-tests,jest-tests]
-#     #Only run this job if the environment protection rules are fulfilled
-#     # (this case, reviewer need to approves and we need to be on dev branch)
-#     environment: "Dev server"
-#     runs-on: ubuntu-latest
-#     steps:
-#       #call check out sever to checkout/pull our repo
-#     - run: curl http://sub.yogadev.se/${{secrets.DEPLOYMENT_KEY}}
+  golive:
+     # demand that the 3 tests jobs suceeed before running go love
+     needs: [api-tests,wdio-tests,jest-tests]
+     #Only run this job if the environment protection rules are fulfilled
+     # (this case, reviewer need to approves and we need to be on dev branch)
+     environment: "Dev server"
+     runs-on: ubuntu-latest
+     steps:
+       #call check out sever to checkout/pull our repo
+     - run: curl http://cs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
 ##
       
