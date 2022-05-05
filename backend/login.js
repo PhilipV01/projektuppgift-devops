@@ -1,3 +1,4 @@
+const path = require('path')
 const session = require('express-session');
 const store = require('better-express-store');
 const acl = require('./acl');
@@ -10,8 +11,8 @@ module.exports = function (app, db) {
     resave: false,
     saveUninitialized: true,
     cookie: { secure: 'auto' },
-    store: store({ dbPath: './database/products.db' })
-  })); //database name should be 'groceryshop.db' instead of products
+    store: store({ dbPath: path.join(__dirname,'../backend/database','products.db') })
+  })); 
 
   app.post('/api/login', (req, res) => {
     if (!acl('login', req)) {
