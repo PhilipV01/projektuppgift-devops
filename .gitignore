@@ -1,5 +1,5 @@
 # Ignore db
-backend/database/products.db  
+#backend/database/products.db  
 # Logs
 logs
 *.log
