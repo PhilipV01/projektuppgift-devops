@@ -103,7 +103,6 @@ jobs:
      if: github.ref == 'refs/head/dev'
      #Only run this job if the environment protection rules are fulfilled
      # (this case, reviewer need to approves and we need to be on dev branch)
-     environment: "Dev server"
      runs-on: ubuntu-latest
      steps:
        #call check out sever to checkout/pull our repo
@@ -116,7 +115,6 @@ jobs:
      if: github.ref == 'refs/head/main'
      #Only run this job if the environment protection rules are fulfilled
      # (this case, reviewer need to approves and we need to be on dev branch)
-     environment: "Dev server"
      runs-on: ubuntu-latest
      steps:
        #call check out sever to checkout/pull our repo
