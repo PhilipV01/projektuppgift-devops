@@ -93,7 +93,8 @@ jobs:
     - run: cp backend/database/products-template.db backend/database/products.db
     - run: SERVERNAME=dev pm2 start backend/index.js
     - run: npm run jest
-
+    
+#golive will be done separetely
   goliveDev:
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
