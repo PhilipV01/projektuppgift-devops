@@ -95,10 +95,11 @@ jobs:
     - run: npm run jest
 
   goliveDev:
-    # demand that the 3 tests jobs suceeed before running go love
-    needs: [api-tests,wdio-tests,jest-tests]
-    if: github.ref == 'refs/heads/dev'
-    #Only run this job if the environment protection rules are fulfilled
+     # demand that the 3 tests jobs suceeed before running go love
+     needs: [api-tests,wdio-tests,jest-tests]
+     if: github.ref == 'refs/heads/dev'
+     #Only run this job if the environment protection rules are fulfilled
+
      # (this case, reviewer need to approves and we need to be on dev branch)
     runs-on: ubuntu-latest
     steps:
@@ -106,15 +107,17 @@ jobs:
     - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
   goliveMain:
-    # demand that the 3 tests jobs suceeed before running go love
-    needs: [api-tests,wdio-tests,jest-tests]
-    if: github.ref == 'refs/heads/main'
-    #Only run this job if the environment protection rules are fulfilled
-    # (this case, reviewer need to approves and we need to be on dev branch)
-    runs-on: ubuntu-latest
-    steps:
-    #call check out sever to checkout/pull our repo
-    - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
+     # demand that the 3 tests jobs suceeed before running go love
+     needs: [api-tests,wdio-tests,jest-tests]
+     if: github.ref == 'refs/heads/main'
+     #Only run this job if the environment protection rules are fulfilled
+     # (this case, reviewer need to approves and we need to be on dev branch)
+     environment: "Dev server"
+     runs-on: ubuntu-latest
+     steps:
+       #call check out sever to checkout/pull our repo
+     - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
+
 
    
       
