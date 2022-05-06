@@ -6,9 +6,8 @@
     "scripts": {
         "jest": "jest",
         "wdio": "wdio run wdio.conf.js",
-        "start": "node backend/index",
-        "api": "newman run api-tests/logInOutTest.postman_collection.json"
-        
+        "start": "node backend/index --SERVERNAME=dev",
+        "api-dev": "newman run api-tests/logInOutTest.postman_collection.json"
     },
     "keywords": [],
     "author": "",

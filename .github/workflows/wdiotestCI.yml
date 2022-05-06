@@ -27,7 +27,7 @@ jobs:
      - run: npm install -g pm2 
      - run: cp backend/database/products-template.db backend/database/products.db
      # start index.js with pm2 
-     - run: pm2 start backend/index.js 
+     - run: SERVERNAME=dev pm2 start backend/index.js 
      #Chrome just incase.. 
      - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
      - run: sudo apt install ./google-chrome-stable_current_amd64.deb  
@@ -68,7 +68,7 @@ jobs:
         # Copy db-template to realdb
       - run: cp backend/database/products-template.db backend/database/products.db
         # start up our backend
-      - run: pm2 start backend/index.js
+      - run: SERVERNAME=dev pm2 start backend/index.js
         # run our api tests
       - run: npm run api # <- !!! collection name in package.json need to be changed once we got proper tests
 
@@ -91,7 +91,7 @@ jobs:
     - run: npm run build  --if-present         
     - run: npm install -g pm2
     - run: cp backend/database/products-template.db backend/database/products.db
-    - run: pm2 start backend/index.js
+    - run: SERVERNAME=dev pm2 start backend/index.js
     - run: npm run jest
 
 #CD
