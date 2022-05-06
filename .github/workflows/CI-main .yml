@@ -2,9 +2,9 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [dev] 
+    branches: [main] 
   pull_request: 
-    branches: [dev]  
+    branches: [main]  
 
 jobs: 
 
@@ -27,7 +27,7 @@ jobs:
      - run: npm install -g pm2 
      - run: cp backend/database/products-template.db backend/database/products.db
      # start index.js with pm2 
-     - run: SERVERNAME=dev pm2 start backend/index.js 
+     - run: pm2 start backend/index.js 
      #Chrome just incase.. 
      - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
      - run: sudo apt install ./google-chrome-stable_current_amd64.deb  
@@ -68,7 +68,7 @@ jobs:
         # Copy db-template to realdb
       - run: cp backend/database/products-template.db backend/database/products.db
         # start up our backend
-      - run: SERVERNAME=dev pm2 start backend/index.js
+      - run: pm2 start backend/index.js
         # run our api tests
       - run: npm run api # <- !!! collection name in package.json need to be changed once we got proper tests
 
@@ -91,32 +91,13 @@ jobs:
     - run: npm run build  --if-present         
     - run: npm install -g pm2
     - run: cp backend/database/products-template.db backend/database/products.db
-    - run: SERVERNAME=dev pm2 start backend/index.js
+    - run: pm2 start backend/index.js
     - run: npm run jest
 
-<<<<<<< HEAD:.github/workflows/CI.yml
-#CD
-  goliveDev:
-=======
 #CD on dev 
   golive:
->>>>>>> dev:.github/workflows/CI-dev.yml
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
-     if: github.ref == 'refs/head/dev'
-     #Only run this job if the environment protection rules are fulfilled
-     # (this case, reviewer need to approves and we need to be on dev branch)
-     environment: "Dev server"
-     runs-on: ubuntu-latest
-     steps:
-       #call check out sever to checkout/pull our repo
-     - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
-
-<<<<<<< HEAD:.github/workflows/CI.yml
-  goliveMain:
-     # demand that the 3 tests jobs suceeed before running go love
-     needs: [api-tests,wdio-tests,jest-tests]
-     if: github.ref == 'refs/head/main'
      #Only run this job if the environment protection rules are fulfilled
      # (this case, reviewer need to approves and we need to be on dev branch)
      environment: "Dev server"
@@ -124,10 +105,9 @@ jobs:
      steps:
        #call check out sever to checkout/pull our repo
      - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
-=======
+
 
   
->>>>>>> dev:.github/workflows/CI-dev.yml
       
    
       
