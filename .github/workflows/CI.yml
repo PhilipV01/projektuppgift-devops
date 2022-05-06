@@ -102,10 +102,10 @@ jobs:
      #Only run this job if the environment protection rules are fulfilled
 
      # (this case, reviewer need to approves and we need to be on dev branch)
-    runs-on: ubuntu-latest
-    steps:
+     runs-on: ubuntu-latest
+     steps:
     #call check out sever to checkout/pull our repo
-    - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
+     - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
   goliveMain:
      # demand that the 3 tests jobs suceeed before running go love
