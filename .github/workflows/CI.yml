@@ -94,13 +94,10 @@ jobs:
     - run: SERVERNAME=dev pm2 start backend/index.js
     - run: npm run jest
 
-<<<<<<< HEAD:.github/workflows/CI.yml
+
 #CD
   goliveDev:
-=======
-#CD on dev 
-  golive:
->>>>>>> dev:.github/workflows/CI-dev.yml
+
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
      if: github.ref == 'refs/head/dev'
@@ -112,7 +109,7 @@ jobs:
        #call check out sever to checkout/pull our repo
      - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
-<<<<<<< HEAD:.github/workflows/CI.yml
+
   goliveMain:
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
@@ -124,11 +121,7 @@ jobs:
      steps:
        #call check out sever to checkout/pull our repo
      - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
-=======
 
-  
->>>>>>> dev:.github/workflows/CI-dev.yml
-      
    
       
        
