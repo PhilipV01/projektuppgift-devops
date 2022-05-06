@@ -2,9 +2,9 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [dev,main,setup-CD,] #[dev]
+    branches: [main] 
   pull_request: 
-    branches: [dev, main]  
+    branches: [main]  
 
 jobs: 
 
@@ -94,7 +94,7 @@ jobs:
     - run: pm2 start backend/index.js
     - run: npm run jest
 
-#CD
+#CD on dev 
   golive:
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
@@ -104,9 +104,10 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        #call check out sever to checkout/pull our repo
-     - run: curl http://cs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
+     - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
-##
+
+  
       
    
       
