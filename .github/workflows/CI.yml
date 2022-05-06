@@ -70,7 +70,7 @@ jobs:
         # start up our backend
       - run: SERVERNAME=dev pm2 start backend/index.js
         # run our api tests
-      - run: npm run api # <- !!! collection name in package.json need to be changed once we got proper tests
+      - run: npm run api 
 
   jest-tests: 
 
