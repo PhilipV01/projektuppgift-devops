@@ -8,16 +8,11 @@ require('./fakeDOM.js')
 let myShoppingCart = new ShoppingCart();
 
 describe('Test the Shopppingcart class', ()=> {
-    test('Test that product can be added to cart', ()=> {
+    test('Test that product can be added to cart and then emptied', ()=> {
         expect(myShoppingCart.orderRows.length).toBe(0);
         let myProduct = new Product(2, 'product', 300, 'my product');
         myShoppingCart.add(2, myProduct);
         expect(myShoppingCart.orderRows.length).toBe(1);
-    });
-
-    test('Test that cart can be emptied', () => {
-        let myProduct = new Product(2, 'product', 300, 'my product');
-        myShoppingCart.add(2, myProduct);
         myShoppingCart.empty();
         expect(myShoppingCart.orderRows.length).toBe(0);
     });
