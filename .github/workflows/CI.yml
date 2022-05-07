@@ -96,7 +96,7 @@ jobs:
     - run: npm run jest
 
 #golive will be done separetely
-  goliveDev:
+  goliveDev: #dcs
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
      if: github.ref == 'refs/heads/dev'
@@ -107,7 +107,7 @@ jobs:
     #call check out sever to checkout/pull our repo
      - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
 
-  goliveMain:
+  goliveMain: #mcs
      # demand that the 3 tests jobs suceeed before running go love
      needs: [api-tests,wdio-tests,jest-tests]
      if: github.ref == 'refs/heads/main'
