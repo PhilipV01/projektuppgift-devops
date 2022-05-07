@@ -95,14 +95,26 @@ These test the different user scenarios that we imagine the user would use our w
 3. **Jest-tests (in folder called test)**   
 We use these to test that the frontend looks and buttons function as intended.
 
+We also have a folder that we call "temp" which is where we place all tests that we want to keep but that for one reason or another is not working yet. 
+All files moved to this folder are gitignored and therefore not tracked by git until moved out of it.
+
+This is a temporary workaround that allows us to test our CI/CD process and make sure that is working properly with tests that are working as designed.
+
 ------------------------------------------------------------------
 ## About the CI process
+To have quick checks and implementation of our upgrades and tests, once we have all of our security and functionality tests in place, we want these to automatically run whenever a change (that is not gitignored) is saved or pushed to our protected branches. This process is what we call Continous Integration or CI.
 
+We utilize GitHub Actions (GHA) and for this we have a written yml script. The file called "wdiotestCI.yml" and is located in our ".github" folder, under a subfolder called "workflows".
+
+This script lists all the jobs we want it to initiate whenever we push or pull to or from our protected branches (in some cases we may do so from other feature branches to be able to check our changes immediately.)
 
 ------------------------------------------------------------------
-
 ## About the CD process
+The next natural step after CI is to make sure that we get these out to our customer as soon as they have been vetted through the CI process. We do not want our updates and changes to just sit around and wait once the automatic tests are run and have passed. This is what we call Continuous Deployment or CD. 
 
+In the same yml script that we have for CI, towards the end, we have written steps to automatically deploy to our production server once certain conditions and criteria are met (for example, passing all of the crucial tests).
+
+In addition to the tests having to pass, we have also criteria on what branch we are deploying from so that the changes only go to the web server that pertain to that particular branch.
 
 -----------------------------------------------------------------
 ## About the database
