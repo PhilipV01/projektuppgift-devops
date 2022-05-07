@@ -10,3 +10,13 @@ class AdminView{
 
     }
 }
+
+/*Viewname 
+ orderDetails: each products and price for orders 
+ orderDetailSubTotal
+ orderSums: total price for eahc order 
+ totalOrderSumHist : total price and products list for each order
+ 
+ 
+ 
+ */
