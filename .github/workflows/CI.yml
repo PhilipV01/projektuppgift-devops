@@ -3,7 +3,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [main, dev,feature-pm2-port-changer] 
+    branches: [main, dev] 
   pull_request: 
     branches: [main, dev]  
 
