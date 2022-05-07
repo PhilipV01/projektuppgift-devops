@@ -5,13 +5,12 @@
     },
     "login": {
       "get": true,
-      "post":true
+      "post": true
     },
     "users": {
       "post": true
     }
-  },    
-  
+  },
   "user": {
     "products": {
       "get": true
@@ -22,22 +21,21 @@
     },
     "place-my-order": {
       "post": true
-    } 
+    }
   },
-
   "admin": {
     "tablesAndViews": {
       "get": true
     },
-    "products":{
+    "products": {
       "get": true,
       "post": true,
       "put": true,
       "delete": true
     },
-    "login":{
-      "get":true,
-      "delete":true
+    "login": {
+      "get": true,
+      "delete": true
     },
     "orders": {
       "get": true,
@@ -49,10 +47,16 @@
       "get": true
     },
     "orderSums": {
-      "get":true
+      "get": true
     },
     "users": {
-      "get":true
+      "get": true
+    },
+    "orderDetailSubTotal": {
+      "get": true
+    },
+    "totalOrderSumHist": {
+      "get": true
     }
-  } 
+  }
 }
