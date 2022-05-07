@@ -62,8 +62,8 @@ Copy the products-template.db into the same folder and rename the copy to produc
 If you need to make structural changes to the database (such as new tables, views, etc) then those changes need to be done in the products-template.db from the  tell everyone in the team that they should copy it again and rename as described above.
 
 ------------------------------------------------------------------
-## Getting Started with the nitty gritty work
-### Cloning the repo
+# Getting Started with the nitty gritty work
+## Cloning the repo
 Start by cloning the repo into a directory: 
 Pick/create a location/directory on your computer where your local repository will reside. Through the commandprompt, go to that location/directory. 
 Write the following git command, and press enter (this will automatically start setting up your local repository.)
@@ -90,7 +90,7 @@ Go to the ***Trello*** board and look at what tasks/ features need to be done. A
 
       git branch -r
 
-You will then either select an existing branch or create a new branch to work in:
+### **You will then either select an existing branch or create a new branch to work in:**
 
   ### *Selecting an existing feature branch*
   If there is already an existing feature branch, you can go to it by writing the following in the terminal/command prompt:
@@ -108,22 +108,24 @@ You will then either select an existing branch or create a new branch to work in
       feature-[name-of-your-task]
   Hit enter and a branch will have been created from the branch you were currently on (which should be *dev*).Publish your branch to the remote repository and start working your feature.
 
-  ### Commit regularly as you work
-  You will work locally on your feature and should commit regularly to the feature branch you are working in with a brief summary message of what you have done. This will help you track your changes and if necessary, un-do them easier if necessary. Whenever you commit, this is always just in your local repository until you push/sync them to the repo.
-  
-  You can do this in the command prompt or via VS Code.
+## Remember to commit regularly as you work
+You will work locally on your feature and should commit regularly to the feature branch you are working in with a brief summary message of what you have done. This will help you track your changes and if necessary, un-do them easier if necessary. Whenever you commit, this is always just in your local repository until you push/sync them to the repo.
 
-### Pushing your commits
-  Pushing your commits is how you update the repo with your local changes. You can do this with every commit, if you are sure of your work (as in you might not need to roll back.) You can do this in the command prompt or VS Code.
+You can do this in the command prompt or via VS Code.
 
-  **Nevertheless, you should push your commits at the very least to the repo with the last commit before you are done for the day.** 
+## Pushing your commits
+Pushing your commits is how you update the repo with your local changes. You can do this with every commit, if you are sure of your work (as in you might not need to roll back.) 
 
-  This allows everyone to have the most up-to-date project on all branches, and allows the team to be able to continue work where it has been left off by others, in case you are off.
+You can do this in the command prompt or VS Code.
 
-  This will also be especially useful if you should need any help solving something and we are all working remotely. That way you can just update the team on ***Discord*** on your latest pushes and what questions you have. This is in addition to us screensharing and working on each other's computers.
+**Nevertheless, you should push your commits at the very least to the repo with the last commit before you are done for the day.** 
+
+This allows everyone to have the most up-to-date project on all branches, and allows the team to be able to continue work where it has been left off by others, in case you are off.
+
+This will also be especially useful if you should need any help solving something and we are all working remotely. That way you can just update the team on ***Discord*** on your latest pushes and what questions you have. This is in addition to us screensharing and working on each other's computers.
 
 -----------------------------------------------------------------
-## Merging from and to *dev*
+## Merging feature branches and *dev*
 When your feature is done and you are ready to incorporate your branch with *dev*, you will merge with *dev* in a particular back and forth order. The logic for this is: Whichever way you merge, if it breaks, then you know for sure that it will also break the other way. Because of this, we would rather it break in the feature branch, then in the *dev* branch.
 
 1. Make sure everything is working and nothing broke in the project. Update your local *dev* by pulling from the origin to make sure *dev* is up-to-date.
