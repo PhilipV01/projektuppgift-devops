@@ -2,14 +2,67 @@
 ## Betygsgrundande uppgift för DevOps1 kursen.
 -----------------------------------------------------------------
 ## Working in git branches
-Because our *dev* and *main* branches are protected, we cannot write nor push directly to them. We can and will pull regularly to have the latest update of the branches found on our repo. 
+The benefit of working with version control (git branches) is that it allows us to maintain the integrity of the hard work we have already done to get the product ready, up and running, while still allowing us to be able to try new things to further improve the product. If we make a mistake outside of the core, then any mistake is easily fixed or reversed without any disturbance to product itself.
 
-Our *dev* should work in tandem with our *main*: whatever we want on main should exist and be thoroughly tested on *dev* first. 
-Our *main* branch is connected to our live production server and as such, we do all of our ground work and testing FIRST through the *dev*.
+We have two protected git branches that are our bread and butter or the heart and brain of our project. In git terminology, protected means that we cannot write nor push directly to them. We can and should always pull regularly to have the latest update of these two branches from our repo. 
 
-This is why we create **feature** branches from *dev*, so that we can develop enhancements or chores that we later (when finished and tested) want to deploy to *main*. **Hotfix** branches are created from *main* when we need to address any bug issues that may appear on *main* so we can resolve it quickly for production. We do **not** use the hotfix branches to work on enhancements, neither do we create feature branches from *main*.
+Our *dev* branch should work in tandem with our *main*: whatever we would want to see on *main* should already exist and be thoroughly tested on *dev* first. 
+Our *main* branch is connected to our live production server and as such, we do all of our ground work and testing FIRST through the *dev* which is connected to our development server. 
 
-## Getting Started
+This is why we create **feature** branches from *dev*; these feature branches are our playground so that we can develop enhancements or chores that we later (when finished and tested) transfer to *dev* and then from there finally to *main*. (This transfer is what we call "to merge". More on merging the two later under the nitty gritty section.) 
+
+**Hotfix** branches are created from *main* when we need to address any bug issues that may appear on *main* so we can resolve it quickly for production. We do **not** use the hotfix branches to work on enhancements, and we do **not** create feature branches from *main*.
+
+------------------------------------------------------------------
+## About the CI process
+To have quick checks and timely implementation of our upgrades and tests, we want to automatically run all of our security and functionality tests (once we have them in place) whenever a change is saved or pushed to our protected branches. This process is what we call Continous Integration or CI.
+
+We utilize GitHub Actions (GHA) and for this we have a written yml script. The file is called "wdiotestCI.yml" and is located in our ".github" folder, under a subfolder called "workflows".
+
+This script lists all the jobs we want GHA to initiate automatically whenever we push or pull to or from our protected branches (in some cases we may do so from other feature branches to be able to check our changes immediately.)
+
+------------------------------------------------------------------
+## About the CD process
+The next natural step after CI is to make sure that we get the finished product out to our customer as soon as they have been vetted through the CI process. We do not want our updates and changes to just sit around and wait after the automatic tests have already run and have passed. This is what we call Continuous Deployment or CD. 
+
+In the same yml script that we have for CI, towards the end, we have written steps to automatically deploy to our production server once certain conditions and criteria are met (for example, passing all of the crucial tests).
+
+In addition to the tests having to pass, we have also criteria on what branch we are deploying from so that the changes only go to the web server that pertain to the particular branch from which we are running the script.
+
+------------------------------------------------------------------
+### About the tests we use
+We have three test types (they all use javascript with occasional html imbedded) that we use to test various functionalities of our project:
+
+1. **Postman/newman-tests (in folder called api-tests)**  
+We use these to test the rest-api and making sure information is flowing to and from the back-end to the front-end.
+2. **Webdriver IO-tests (in folder called cucumber-wdio)**  
+These test the different user scenarios that we imagine the user would use our website and also how the product owner would want the website to be used.
+3. **Jest-tests (in folder called test)**   
+We use these to test that the frontend looks and buttons function as intended.
+
+We also have a folder that we call "temp" which is where we place all tests that we want to keep but that for one reason or another is not working yet. 
+All files moved to this folder are gitignored and therefore not tracked by git until moved out of it.
+
+This is a temporary workaround that allows us to test our CI/CD process and make sure that is working properly with tests that are working as designed.
+
+-----------------------------------------------------------------
+### About the database
+We use SQLite Studio to manage our SQL databases. Go to our "backend" folder and into in a subfolder named "database" to find them.
+
+We use 2 databases: **products-template.db** and **products.db**.
+
+1. **products-template.db** is where we save the structure and set up of the database to use (as the name implies) as a template to create database.
+
+2.  **products.db** is the one to which our servers retrieve and write information in the backend. This one is added in our .gitignore file, which means that we do not track/version control changes made there.
+
+If you do already not have a database named products.db in the database folder before starting a local server host, the website will not show all proper information. 
+
+Copy the products-template.db into the same folder and rename the copy to products.db before you start your local server!
+
+If you need to make structural changes to the database (such as new tables, views, etc) then those changes need to be done in the products-template.db from the  tell everyone in the team that they should copy it again and rename as described above.
+
+------------------------------------------------------------------
+## Getting Started with the nitty gritty work
 ### Cloning the repo
 Start by cloning the repo into a directory: 
 Pick/create a location/directory on your computer where your local repository will reside. Through the commandprompt, go to that location/directory. 
@@ -71,7 +124,7 @@ You will then either select an existing branch or create a new branch to work in
 
 -----------------------------------------------------------------
 ## Merging from and to *dev*
-When your feature is done and you are ready to incorporate your branch with *dev*:
+When your feature is done and you are ready to incorporate your branch with *dev*, you will merge with *dev* in a particular back and forth order. The logic for this is: Whichever way you merge, if it breaks, then you know for sure that it will also break the other way. Because of this, we would rather it break in the feature branch, then in the *dev* branch.
 
 1. Make sure everything is working and nothing broke in the project. Update your local *dev* by pulling from the origin to make sure *dev* is up-to-date.
 2. Before you merge into *dev*, first merge *dev* locally into your feature branch and make sure your feature still works and nothing breaks.
@@ -82,52 +135,13 @@ When your feature is done and you are ready to incorporate your branch with *dev
 
 5. Once everything passes locally, you will then push your feature branch to the repo.
 6. Create a new pull request via the GitHub repo and merge your feature into dev.
-7. Notify the team on ***Discord***, and tag the assigned code reviewer who will need to review and approve the changes before the merge can be completed.
-
-------------------------------------------------------------------
-## About the tests
-We have three test types that we use to test various functionalities of our project:
-
-1. **Postman/newman-tests (in folder called api-tests)**  
-We use these to test the rest-api and making sure information is flowing to and from the back-end to the front-end.
-2. **Webdriver IO-tests (in folder called cucumber-wdio)**  
-These test the different user scenarios that we imagine the user would use our website and also how the product owner would want the website to be used.
-3. **Jest-tests (in folder called test)**   
-We use these to test that the frontend looks and buttons function as intended.
-
-We also have a folder that we call "temp" which is where we place all tests that we want to keep but that for one reason or another is not working yet. 
-All files moved to this folder are gitignored and therefore not tracked by git until moved out of it.
-
-This is a temporary workaround that allows us to test our CI/CD process and make sure that is working properly with tests that are working as designed.
-
-------------------------------------------------------------------
-## About the CI process
-To have quick checks and implementation of our upgrades and tests, once we have all of our security and functionality tests in place, we want these to automatically run whenever a change (that is not gitignored) is saved or pushed to our protected branches. This process is what we call Continous Integration or CI.
-
-We utilize GitHub Actions (GHA) and for this we have a written yml script. The file called "wdiotestCI.yml" and is located in our ".github" folder, under a subfolder called "workflows".
-
-This script lists all the jobs we want it to initiate whenever we push or pull to or from our protected branches (in some cases we may do so from other feature branches to be able to check our changes immediately.)
-
-------------------------------------------------------------------
-## About the CD process
-The next natural step after CI is to make sure that we get these out to our customer as soon as they have been vetted through the CI process. We do not want our updates and changes to just sit around and wait once the automatic tests are run and have passed. This is what we call Continuous Deployment or CD. 
-
-In the same yml script that we have for CI, towards the end, we have written steps to automatically deploy to our production server once certain conditions and criteria are met (for example, passing all of the crucial tests).
-
-In addition to the tests having to pass, we have also criteria on what branch we are deploying from so that the changes only go to the web server that pertain to that particular branch.
+7. Notify the team on **Discord**, and tag the assigned code reviewer who will need to review and approve the changes before the merge can be completed.
+8. Once the merge is successful, delete the feature branch both on the repo as well as on your local repository.
 
 -----------------------------------------------------------------
-## About the database
-We use SQLite Studio to manage our SQL databases. Go to our "backend" folder and into in a subfolder named "database" to find them.
+## Merging *dev* and *main*
+When we are satisfied with our work in *dev*, everything is working as designed and want to update these changes to our *main* branch, we follow the similar steps 1-7 from the previous section but with *dev* and *main* (we will of course skip step 8 as we do **not** want to delete *dev*.)
 
-We use 2 databases: **products-template.db** and **products.db**.
+But the logic is the same. If it is going to break, then we rather choose to break it in *dev* than in *main*.
+So you will first merge *main* into *dev* to make sure that *dev* does not break when doing so. *If all goes well* **then (and only then)** do we merge *dev* into *main*.
 
-1. **products-template.db** is where we save the structure and set up of the database to use (as the name implies) as a template to create database.
-
-2.  **products.db** is the one to which our servers retrieve and write information in the backend. This one is added in our .gitignore file, which means that we do not track/version control changes made there.
-
-If you do already not have a database named products.db in the database folder before starting a local server host, the website will not show all proper information. 
-
-Copy the products-template.db into the same folder and rename the copy to products.db before you start your local server!
-
-If you need to make structural changes to the database (such as new tables, views, etc) then those changes need to be done in the products-template.db from the  tell everyone in the team that they should copy it again and rename as described above.
