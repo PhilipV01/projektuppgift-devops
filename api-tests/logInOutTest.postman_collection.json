@@ -24,7 +24,15 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"server\", \"http://localhost:4000\");"
+<<<<<<< Updated upstream
+							"pm.environment.set(\"server\", \"http://localhost:3000\");"
+=======
+<<<<<<< HEAD
+							"pm.environment.set(\"server\", \"http://localhost:3000\");"
+=======
+							"pm.environment.set(\"server\", \"http://localhost:3000\");"
+>>>>>>> main
+>>>>>>> Stashed changes
 						],
 						"type": "text/javascript"
 					}
@@ -116,12 +124,28 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/place-my-order",
+<<<<<<< Updated upstream
+					"raw": "http://localhost:3000/api/place-my-order",
+=======
+<<<<<<< HEAD
+					"raw": "http://localhost:3000/api/place-my-order",
+=======
+					"raw": "http://localhost:3000/api/place-my-order",
+>>>>>>> main
+>>>>>>> Stashed changes
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+<<<<<<< Updated upstream
+					"port": "3000",
+=======
+<<<<<<< HEAD
+					"port": "3000",
+=======
+					"port": "3000",
+>>>>>>> main
+>>>>>>> Stashed changes
 					"path": [
 						"api",
 						"place-my-order"
