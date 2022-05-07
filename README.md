@@ -9,11 +9,16 @@ Start by cloning the repo into a directory, make sure that you are in the *dev* 
 When your feature is done and you want to merge back into *dev* please make sure that you...
 
 1. Make sure everything is working and nothing broke in the project.
-2. Before you merge into *dev* merge *dev* into your feature branch and make sure your feature still works and nothing else broke, if something brakes try to fix it and test again.
+2. Before you merge into *dev*, merge *dev* into your feature branch and make sure your feature still works and nothing else broke, if something brakes try to fix it and test again. Do this locally before pushing.
 3. When everything is working you can then merge your feature branch into *dev*.
 
 ### About the tests
 We have three test types that we use to test various functionality of our product:
+
+1. API-tests    
+a. 
+2. wdio-tests
+3. jest-tests
 
 ------------------------------------------------------------------
 ## About the CI process
