@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "feb6f393-d47b-4403-8c83-bad681e19872",
+		"_postman_id": "38b571c0-0e73-457b-9b75-c87f301cb056",
 		"name": "login/out tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -19,18 +19,25 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"server\", \"http://localhost:3000\");"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/login",
-					"protocol": "http",
+					"raw": "{{server}}/api/login",
 					"host": [
-						"localhost"
+						"{{server}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"login"
@@ -39,7 +46,7 @@
 			},
 			"response": []
 		},
-       {
+		{
 			"name": "Get Products",
 			"event": [
 				{
@@ -64,12 +71,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/products",
-					"protocol": "http",
+					"raw": "{{server}}/api/products",
 					"host": [
-						"localhost"
+						"{{server}}"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"products"
@@ -125,6 +130,5 @@
 			},
 			"response": []
 		}
-	
 	]
 }
