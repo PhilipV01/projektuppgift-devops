@@ -10,7 +10,7 @@ When(/^I choose and click a product name "(.*)"$/, async (product) => {
    let headlines = await $$('.productInList h3');
    for(let headline of headlines){
        let text = await headline.getText();
-       if(text.trim() === "Tuna - Yellowfin"){
+       if (text.trim() === "Pastry - Plain Baked Croissant"){
            await headline.scrollIntoView();
            await headline.click()
            break
@@ -20,11 +20,11 @@ When(/^I choose and click a product name "(.*)"$/, async (product) => {
 
 When ('I see the product name, its detail information and price', async()=>{
     let name = await $('.product h3');
-    await expect(name).toHaveText("Tuna - Yellowfin");
-    let detail = await $('.product div');
-    await expect(detail).toHaveTextContaining('Lorem ipsum dolor sit amet');
+    await expect(name).toHaveText("Pastry - Plain Baked Croissant");
+    let detail = await $('.product div, p');
+    await expect(detail).toHaveTextContaining('In sagittis dui vel nisl.');
     let price = await $('.price');
-    await expect(price).toHaveText('Price: 61 kr');
+    await expect(price).toHaveText('Price: 106 kr');
 })
 
 Then (/^I click "(.*)" button$/, async(button)=>{
@@ -36,6 +36,7 @@ Then (/^I click "(.*)" button$/, async(button)=>{
 
 
 Then ('I am back to the product list', async()=>{
-    //expect(browser.url('/'));
+    let productList = await $$('.productInList');
+    expect(productList).toBeExisting();
     // CHECK THAAT productList is back
 });
