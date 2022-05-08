@@ -104,7 +104,7 @@ dist
 .tern-port
 
 #unsucsessful test need to be ignored for now
-temp/*
+#temp/*
 
 
 
