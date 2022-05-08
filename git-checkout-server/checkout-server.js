@@ -32,7 +32,7 @@ function checkout() {
 
     // remove the CS part of this servername to get the pm2 name of
     // the server of to start or stop
-    let serverToRestart = serverName.replaceAll('CS', '');
+    let serverToRestart = serverName.replaceAll('dcs', 'mcs');
 
     execSync('git stash');
     execSync('git pull');
