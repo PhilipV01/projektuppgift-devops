@@ -40,7 +40,8 @@ function checkout() {
     execSync('pm2 stop ' + serverToRestart);
     execSync('rm ' + dbPath);
     execSync('cp ' + dbTemplatePath + ' ' + dbpath);
-    execSync('pm2 restart ' + serverToRestart);
+    //execSync('pm2 restart ' + serverToRestart);
+    execSync('pm2 restart --SERVERNAME=dev');
     console.log('pulled, copied db and restarted server ')
 }
 
