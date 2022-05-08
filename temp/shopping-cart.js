@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
-const pauseTime = 0;
+const pauseTime = 5000;
 
 // browser.url - navigate to a page/url
 // browser.pause - pause execution for a number of ms
@@ -26,19 +26,22 @@ When(/^I click on the buy button for "(.*)"$/, async (productName) => {
   // check that we found a product
   expect(foundProduct).toBeExisting();
   // grab the buyButton
-  let buyButton = await foundProduct.$('.buyButton');
+  let buyButton = await foundProduct.$('.buyButton')
+  await buyButton.waitForClickable();
   // scroll the buyButton into view
-  await buyButton.scrollIntoView();
+  //await buyButton.scrollIntoView();
   // click the buyButton
   await buyButton.click();
+  await browser.pause(pauseTime);
 });
 
 Then(/^(\d*) item of "(.*)" should be added to the cart$/, async (quantity, productName) => {
   // get all the table cells in the first row of table
   // that is the shoppingList/cart
-  let tds = await $$('.shoppingList tr:first-child td');
+  let tds = await $$('.shoppingList tr:first-child td')
   // check that we have the expected content in the cart
-  await expect(tds[0]).toHaveText(quantity);
+  await browser.pause(pauseTime);
+  await expect(tds[0]).toHaveValue(quantity);
   await expect(tds[1]).toHaveText(productName);
   // mostly for humans scroll to the shopping cart
   await tds[0].scrollIntoView();
