@@ -17,8 +17,9 @@ This is why we create **feature** branches from *dev*; these feature branches ar
 ## About the CI process
 To have quick checks and timely implementation of our upgrades and tests, we want to automatically run all of our security and functionality tests (once we have them in place) whenever a change is saved or pushed to our protected branches. This process is what we call Continous Integration or CI.
 
-We utilize GitHub Actions (GHA) and for this we have a written yml script. The file is called "CI.yml" and is located in our ".github" folder, under a subfolder called "workflows".
 
+
+We utilize GitHub Actions (GHA) and for this we have a written yml script. The file is called "CI.yml" and is located in our ".github" folder, under a subfolder called "workflows".
 This script lists all the jobs we want GHA to initiate automatically whenever we push or pull to or from our protected branches (in some cases we may do so from other feature branches to be able to check our changes immediately.)
 
 ------------------------------------------------------------------
