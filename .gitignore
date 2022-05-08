@@ -103,8 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-#unsucsessful test need to be ignored for now
-temp/*
+#tests not passing at the moment but pontentially can be added later
+/temp/*
 
 
 
