@@ -32,7 +32,7 @@ function checkout() {
 
     // remove the CS part of this servername to get the pm2 name of
     // the server of to start or stop
-    let serverToRestart = serverName.replaceAll('dcs', 'mcs');
+    let serverToRestart = serverName.replaceAll('CS', '');
 
     execSync('git stash');
     execSync('git pull');
@@ -40,7 +40,6 @@ function checkout() {
     execSync('pm2 stop ' + serverToRestart);
     execSync('rm ' + dbPath);
     execSync('cp ' + dbTemplatePath + ' ' + dbpath);
-    execSync('npm run build');
     execSync('pm2 restart ' + serverToRestart);
     console.log('pulled, copied db and restarted server ')
 }

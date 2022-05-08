@@ -106,7 +106,7 @@ jobs:
      steps:
     #call check out sever to checkout/pull our repo
      - run: curl http://dcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
-     - run: pm2 restart all
+   
 
   goliveMain: 
      # demand that the 3 tests jobs suceeed before running go love
@@ -118,7 +118,7 @@ jobs:
      steps:
        #call check out sever to checkout/pull our repo
      - run: curl http://mcs.groceryshop.r-cz.com/${{secrets.DEPLOYMENT_KEY}}
-     - run: pm2 restart all 
+     
 
 
    
