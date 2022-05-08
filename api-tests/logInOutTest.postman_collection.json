@@ -24,7 +24,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"server\", \"http://localhost:4000\");"
+							"pm.environment.set(\"server\", \"http://localhost:3000\");"
 						],
 						"type": "text/javascript"
 					}
