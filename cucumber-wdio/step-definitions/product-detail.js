@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
-const pauseTime = 1000;
+const pauseTime = 2000;
 
 Given ('that I see a list of products',async()=>{
     await browser.url('/');
@@ -7,7 +7,8 @@ Given ('that I see a list of products',async()=>{
 });
 
 When(/^I choose and click a product name "(.*)"$/, async (product) => {
-   let headlines = await $$('.productInList h3');
+    let headlines = await $$('.productInList h3');
+    await browser.pause(pauseTime);
    for(let headline of headlines){
        let text = await headline.getText();
        if (text.trim() === "Pastry - Plain Baked Croissant"){
@@ -29,8 +30,8 @@ When ('I see the product name, its detail information and price', async()=>{
 
 Then (/^I click "(.*)" button$/, async(button)=>{
     let backButton = await $('.backButton');
-    //await expect (backButton).toHaveStyle(button);
     await backButton.click();
+    await browser.pause(pauseTime);
 
 });
 
