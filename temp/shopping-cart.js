@@ -24,7 +24,7 @@ When(/^I click on the buy button for "(.*)"$/, async (productName) => {
     }
   }
   // check that we found a product
-  expect(foundProduct).toBeTruthy();
+  expect(foundProduct).toBeExisting();
   // grab the buyButton
   let buyButton = await foundProduct.$('.buyButton');
   // scroll the buyButton into view
